@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Fruit Salads</title>
+    <style>
+        body {
+            font-family: 'Century Gothic';
+        }
+
+        .header {
+            display: inline-grid;
+            grid-template-areas: 'cup survey title';
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .survey_box {
+            grid-area: survey;
+            column-width: auto;
+            justify-self: left;
+            align-self: center;
+            color: grey;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+            .survey_box:hover {
+                text-decoration: underline;
+            }
+
+        .title_box {
+            grid-area: title;
+            column-width: 890px;
+            justify-self: right;
+            align-self: center;
+        }
+
+        .cup_box {
+            grid-area: cup;
+            align-self: center;
+            justify-self: left;
+            border: 0px;
+            padding: 0px;
+            column-width: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4d4341;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-areas: 'box5 box1 box2 box3 box4';
+            background-color: lightgrey;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .home {
+            grid-area: box5;
+        }
+
+        .salads {
+            grid-area: box1;
+        }
+
+        .soups {
+            grid-area: box2;
+        }
+
+        .mains {
+            grid-area: box3;
+        }
+
+        .desserts {
+            grid-area: box4;
+        }
+
+        .nav > a:hover {
+            color: #ab2c0c;
+            font-weight: bold;
+        }
+
+        .title {
+            color: #2c5237;
+            font-size: 50px;
+            text-align: center;
+            font-family: Thin, 'Century Gothic', sans-serif;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        h3 {
+            font-size: 40px;
+            color: #4e5e47;
+            display: inline;
+            border: 2px solid #4e5e47;
+            padding: 5px;
+        }
+
+        .comment {
+            font-size: 20px;
+            color: #695a3e;
+        }
+
+        @font-face {
+            font-family: 'Thin';
+            src: url(raleway-thin.woff);
+        }
+
+        ul {
+            list-style: none; /*Remove default bullets*/
+        }
+
+            ul li:before {
+                content: "\2023";
+                color: #695a3e;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+        .subs {
+            font-size: 35px;
+            color: #768a6d;
+            font-weight: bold;
+        }
+        .sub_of_sub {
+            font-size: 25px;
+            color: #5a7d2d;
+            font-weight: bold;
+            border: none;
+        }
+
+        .ingredients {
+            color: #695a3e;
+            font-size: 25px;
+        }
+
+        ol li {
+            padding: 10px;
+        }
+        </style>
+
+</head >
+<body>
+    <!--Top- header-->
+    <div class="header">
+        <div class="cup_box"><a href="../Cover/Survey/survey.html"><img src="../Cover/utensil_icon.jpg" alt="Icon" width="50" height="40" style="display: inline;" /></a></div>
+        <div class="survey_box"><a href="../Cover/Survey/survey.html">Take our survey!</a></div>
+        <div class="title_box"><h1 style="margin:25px; padding:25px; color:#ab2c0c; text-align:center; font-size:50px;">paprikash</h1></div>
+    </div>
+    <!--nav bar-->
+    <nav class="nav">
+        <a href="../Cover/cover_page.html" class="home">HOME</a>
+        <a href="../Salads/salads.html" class="salads">SALADS</a>
+        <a href="../Soups/soups.html" class="soups">SOUPS</a>
+        <a href="../Mains/main_courses.html" class="mains">MAIN DISHES</a>
+        <a href="../Desserts/desserts.html" class="desserts">DESSERTS</a>
+    </nav>
+    <br />
+
+    <h1 class="title" style="border-bottom: 2px solid #2c5237; border-top: 2px solid #2c5237;">Fruit Salads</h1>
+    <br />
+    <!--First Salad: Refreshing Fruit Salad-->
+    <img src="fruit_salad.jpg" width="450" height="350" alt="Refreshing Fruit Salad" style="float: right;" />
+    <h3>Refreshing Fruit Salad</h3>
+    <h4 class="comment">This simple fruit salad is a quick, healthy dessert. In summer, try freezing this in cups with an upside down spoon in the center. Take off the cup and it’s a refreshing, healthy after-school or Shabbos afternoon treat.</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Diet: Vegetarian , Vegan , Pescetarian , Gluten Free , Low Fat
+        <br />
+        Cooking and Prep: 10 min
+        <br />
+        Serves: 6
+        <br />
+        Allergy: No Allergens
+        <br />
+        Author: Kosher.com/ Dining In
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <div class="ingredients">
+        <ul>
+            <li>1 (16-ounce) container strawberries in sauce</li>
+            <li>2 small cans Gefen Mandarin Oranges</li>
+            <li>2 cans Gefen Pineapple Tidbits</li>
+            <li>6 to 8 yellow apples</li>
+            <li>1 cup green grapes</li>
+            <li>1 cup red grapes</li>
+            <li>2 kiwifruit</li>
+            <li>1 banana, optional</li>
+        </ul>
+    </div>
+    <table style="width:100%;">
+        <tr>
+            <td style="text-align: center;"><img src="fruit.jpg" width="1198" height="328" alt="Fruit" /></td>
+        </tr>
+    </table>
+
+    <h4 class="subs">Prepare the Fruit Salad</h4>
+    <ol class="ingredients">
+        <li>Pour container of strawberries with the sauce into large bowl.</li>
+        <li>Drain mandarin oranges and pineapple and add to the strawberries.</li>
+        <li>Dice apples and add to bowl. Add grapes and toss gently.</li>
+        <li>Immediately before serving, peel and dice kiwis and bananas, and add to salad.</li>
+    </ol>
+    <hr />
+    <br />
+    <!--Second Salad- Fruit Salad with Balsamic-Strawberry Coulis and Pomegranate Seeds-->
+    <img src="fruit_salad2.jpg" width="450" height="350" alt="Fruit Salad with Balsamic-Strawberry Coulis and Pomegranate Seeds" style="float: right;" />
+    <h3>Fruit Salad with Strawberry Coulis</h3>
+    <h4 class="comment">The crunchy nuts, smooth strawberry coulis, and fresh fruit are three components that, combined, build to a lovely fruit salad crescendo. This fruit salad can serve either as a healthful starter course or a light, refreshing dessert. Aim for a combination of at least four different types of fruits.</h4>
+    <p class="comment">
+        Difficulty: Medium
+        <br />
+        Diet: Vegetarian , Pescetarian
+        <br />
+        Cooking and Prep: 1.5 hour
+        <br />
+        Serves: 8
+        <br />
+        Allergy: contains NUTS
+        <br />
+        Author: Whisk by Ami Magazine
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Strawberry Coulis</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1 cup strawberries, fresh or frozen</li>
+            <li>1/2 cup orange juice</li>
+            <li>1/2 cup confectioners’ sugar</li>
+            <li>3 tablespoons sugar</li>
+            <li>1 teaspoon Gefen Vanilla Extract</li>
+            <li>1 tablespoon lemon or lime juice</li>
+            <li>1 tablespoon Bartenura Balsamic Vinegar</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Nut Crunch Topping</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1/2 cup brown sugar</li>
+            <li>1 and 1/2 cups Rice Krispies</li>
+            <li>4 ounces (1/2 cup) trans fat-free margarine (use soy-free, if needed)</li>
+            <li>1 cup walnuts or filberts, chopped</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Fruit Salad</h3>
+    <div class="ingredients">
+        <ul>
+            <li>2 cups strawberries, diced</li>
+            <li>2 cups blueberries</li>
+            <li>2 cups mango, peeled and diced</li>
+            <li>2 cups kiwis, peeled and diced</li>
+            <li>pomegranate seeds, for sprinkling</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Coulis</h4>
+    <ol class="ingredients">
+        <li>In a food processor, puree all the ingredients until smooth. Refrigerate until ready to serve.</li>
+    </ol>
+    <h4 class="subs">Prepare the Nut Crunch</h4>
+    <ol class="ingredients">
+        <li>Preheat oven to 350 degrees Fahrenheit. </li>
+        <li>
+            In a roasting pan, combine the following ingredients and bake, uncovered, for 10 minutes.:
+            <ul>
+                <li>brown sugar</li>
+                <li>Rice Krispies</li>
+                <li>margarine</li>
+                <li>walnuts</li>
+
+            </ul>
+        </li>
+        <li>Remove from the oven and stir well to blend the flavors. Allow to cool. Store in an airtight container until ready to serve.</li>
+    </ol>
+    <h4 class="subs">Serve</h4>
+    <ol class="ingredients">
+        <li>In a large bowl, combine the fruits.</li>
+        <li>
+            Scoop the fruit salad into individual serving bowls. Spoon the strawberry coulis over the fruit salad,
+            then spoon the nut crunch on top and serve immediately.
+        </li>
+    </ol>
+    <p>
+        <b>Note:</b> Any leftover nut crunch can be frozen.
+        <br />
+        <b>Tip:</b> For added effect and flavor, sprinkle pomegranate seeds on top of the fruit salad before serving.
+    </p>
+    <hr />
+    <br />
+    <!--Third Salad: Peach Strawberry Salad-->
+    <img src="peach_salad.jpg" width="450" height="350" alt="Peach Strawbery Salad" style="float: right;" />
+    <h3>Peach Strawberry Salad</h3>
+    <h4 class="comment">Here's a salad that screams summer. With a strawberry puree dressing, fresh peach slices and crunchy nuts, this sweet salad is like a burst of sunshine on a plate.</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Diet: Vegetarian , Vegan , Pescetarian , Gluten Free
+        <br />
+        Cooking and Prep: 10 min
+        <br />
+        Serves: 8
+        <br />
+        Allergy: contains NUTS
+        <br />
+        Author: Kosher.com/ Dining In
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <div class="ingredients">
+        <ul>
+            <li>10 ounces frozen strawberries, thawed</li>
+            <li>1 tablespoon raspberry vinegar</li>
+            <li>8 medium-size ripe peaches</li>
+            <li>3 tablespoons lemon juice</li>
+            <li>lettuce, for serving</li>
+            <li>1/4 cup sliced almonds, toasted</li>
+            <li>fresh strawberries, for garnish <i>(optional)</i></li>
+        </ul>
+    </div>
+    <img src="puree.jpg" width="300" height="450" alt="Strawberry-Raspberry Puree" style="float: right;" />
+    <h4 class="subs">Prepare the Dressing</h4>
+    <div class="ingredients">
+        <ol>
+            <li>Place thawed strawberries in blender and blend until smooth. Press puree through a strainer to remove “seeds.” Add raspberry vinegar to puree; stir well and set aside. </li>
+        </ol>
+    </div>
+    <h4 class="subs">Prepare the Peaches</h4>
+    <ol class="ingredients">
+        <li>Cut peaches in half lengthwise and remove pits. Slice into quarter- inch-thick slices, lengthwise, leaving slices attached half and inch at stem end (make cuts from bottom ends).</li>
+        <li>Brush peaches with lemon juice.</li>
+    </ol>
+    <h4 class="subs">Assemble</h4>
+    <div class="ingredients">
+        <ol>
+            <li>Arrange lettuce leaves on eight salad plates decoratively. Arrange peaches evenly over lettuce (two peach halves per plate), letting slices fan out slightly.</li>
+            <li>Drizzle each salad with two tablespoons strawberry puree and sprinkle with toasted almonds. Garnish with fresh strawberries, if desired. Serve immediately.</li>
+        </ol>
+    </div>
+    <br />
+</body>
+</html >

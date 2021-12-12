@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Desserts</title>
+    <style>
+        body {
+            font-family: 'Century Gothic';
+        }
+
+        .header {
+            display: inline-grid;
+            grid-template-areas: 'cup survey title';
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .survey_box {
+            grid-area: survey;
+            column-width: auto;
+            justify-self: left;
+            align-self: center;
+            color: grey;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+            .survey_box:hover {
+                text-decoration: underline;
+            }
+
+        .title_box {
+            grid-area: title;
+            column-width: 890px;
+            justify-self: right;
+            align-self: center;
+        }
+
+        .cup_box {
+            grid-area: cup;
+            align-self: center;
+            justify-self: left;
+            border: 0px;
+            padding: 0px;
+            column-width: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4d4341;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-areas: 'box5 box1 box2 box3 box4';
+            background-color: lightgrey;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .home {
+            grid-area: box5;
+        }
+        .salads {
+            grid-area: box1;
+        }
+
+        .soups {
+            grid-area: box2;
+        }
+
+        .mains {
+            grid-area: box3;
+        }
+
+        .desserts {
+            grid-area: box4;
+        }
+
+        .nav > a:hover {
+            color: #ab2c0c;
+            font-weight: bold;
+        }
+
+        .title {
+            color: #2c5237;
+            font-size: 50px;
+            text-align: center;
+            font-family: 'Century Gothic';
+            padding: 10px;
+            margin: 0px;
+            font-weight: bold;
+        }
+
+        table:first-of-type {
+            padding: 10px;
+            border-top: 5px solid #2c5237;
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            border-bottom: 2px solid #2c5237;
+        }
+
+        td:first-of-type {
+            border-left: 2px solid #2c5237;
+        }
+
+        td {
+            border-right: 2px solid #2c5237;
+        }
+
+            td > a:hover {
+                font-weight: bold;
+                color: #5e4c47;
+            }
+
+        @font-face {
+            font-family: 'Thin';
+            src: url(raleway-thin.woff);
+        }
+        .no{
+            border: none;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .substitutions{
+            display: grid;
+            justify-content: center;
+        }
+        .center{
+            justify-self: center;
+            align-self: center;
+            padding: 5px;
+        }
+        .text1{
+            grid-column: 1/3;
+            grid-row: 1;
+        }
+        .notext{
+            grid-column: 3;
+            grid-row: 1;
+        }
+        .text2{
+            grid-column: 4/6;
+            grid-row: 1;
+        }
+        .text3{
+            grid-column: 1;
+            grid-row: 2;
+        }
+        .text4{
+            grid-column: 4;
+            grid-row: 2;
+        }
+        .img1{
+            grid-column: 2;
+            grid-row: 2;
+        }
+       .img2{
+           grid-column: 3;
+           grid-row: 2;
+       }
+       .img3{
+           grid-column: 5;
+           grid-row: 2;
+       }
+       .text5{
+           grid-column: 1;
+           grid-row: 3;
+       }
+       .img4{
+           grid-column: 2;
+           grid-row: 3;
+       }
+       .img5{
+           grid-column: 3;
+           grid-row: 3;
+       }
+       .text6{
+           grid-column: 4;
+           grid-row: 3;
+       }
+       .img6{
+           grid-column: 5;
+           grid-row: 3;
+       }
+       .text7{
+           grid-column: 1;
+           grid-row: 4;
+       }
+       .img7{
+           grid-column: 2;
+           grid-row: 4;
+       }
+       .img8{
+           grid-column: 3;
+           grid-row: 4;
+       }
+       .text8{
+           grid-column: 4;
+           grid-row: 4;
+       }
+       .img9{
+           grid-column: 5;
+           grid-row: 4;
+       }
+       .text9{
+           grid-column: 1;
+           grid-row: 5;
+       }
+       .img10{
+           grid-column: 2;
+           grid-row: 5;
+       }
+       .img11{
+           grid-column: 3;
+           grid-row: 5;
+       }
+       .text10{
+           grid-column: 4;
+           grid-row: 5;
+       }
+       .img12{
+           grid-column: 5;
+           grid-row: 5;
+       }
+       .text11{
+           grid-column: 1;
+           grid-row: 6;
+       }
+       .img13{
+           grid-column: 2;
+           grid-row: 6;
+       }
+       .img14{
+           grid-column: 3;
+           grid-row: 6;
+       }
+       .text12{
+           grid-column: 4;
+           grid-row: 6;
+       }
+       .img15{
+           grid-column: 5;
+           grid-row: 6;
+       }
+       .text13{
+           grid-column: 1;
+           grid-row: 7;
+       }
+       .img16{
+           grid-column: 2;
+           grid-row: 7;
+       }
+       .img17{
+           grid-column: 3;
+           grid-row: 7;
+       }
+       .text14{
+           grid-column: 4;
+           grid-row: 7;
+       }
+       .img18{
+           grid-column: 5;
+           grid-row: 7;
+       }
+       .text15{
+           grid-column: 1;
+           grid-row: 8;
+       }
+       .img19{
+           grid-column: 2;
+           grid-row: 8;
+       }
+       .img20{
+           grid-column: 3;
+           grid-row: 8;
+       }
+       .text16{
+           grid-column: 4;
+           grid-row: 8;
+       }
+       .img21{
+           grid-column: 5;
+           grid-row: 8;
+       }
+       .text17{
+           grid-column: 1;
+           grid-row: 9;
+       }
+       .img22{
+           grid-column: 2;
+           grid-row: 9;
+       }
+       .img23{
+           grid-column: 3;
+           grid-row: 9;
+       }
+       .text18{
+           grid-column: 4;
+           grid-row: 9;
+       }
+       .img24{
+           grid-column: 5;
+           grid-row: 9;
+       }
+       .text19{
+           grid-column: 1;
+           grid-row: 10;
+       }
+       .img25{
+           grid-column: 2;
+           grid-row: 10;
+       }
+       .img26{
+           grid-column: 3;
+           grid-row: 10;
+       }
+       .text20{
+           grid-column: 4;
+           grid-row: 10;
+       }
+       .img27{
+           grid-column: 5;
+           grid-row: 10;
+       }
+       .img28{
+           grid-column: 1/6;
+           grid-row: 11;
+       }
+    </style>
+</head>
+<body>
+    <!--Top- header-->
+    <div class="header">
+        <div class="cup_box"><a href="../Cover/Survey/survey.html"><img src="../Cover/utensil_icon.jpg" alt="Icon" width="50" height="40" style="display: inline;" /></a></div>
+        <div class="survey_box"><a href="../Cover/Survey/survey.html">Take our survey!</a></div>
+        <div class="title_box"><h1 style="margin:25px; padding:25px; color:#ab2c0c; text-align:center; font-size:50px;">paprikash</h1></div>
+    </div>
+    <!--nav bar-->
+    <nav class="nav">
+        <a href="../Cover/cover_page.html" class="home">HOME</a>
+        <a href="../Salads/salads.html" class="salads">SALADS</a>
+        <a href="../Soups/soups.html" class="soups">SOUPS</a>
+        <a href="../Mains/main_courses.html" class="mains">MAIN DISHES</a>
+        <a href="../Desserts/desserts.html" class="desserts">DESSERTS</a>
+    </nav>
+    <br />
+    <h1 class="title">DESSERTS</h1>
+    <table>
+        <tr style="font-size: 30px;">
+            <td><a href="cakes_cookies.html">Cakes and Cookies</a></td>
+            <td><a href="frozen.html">Frozen</a></td>
+            <td><a href="miniatures.html">Miniatures</a></td>
+        </tr>
+        <tr style="align-content: center;">
+            <td><a href="cakes_cookies.html"><img src="cake_cover.jpg" alt="Meat" height="300" width="400" /></a></td>
+            <td><a href="frozen.html"><img src="frozen_cover.jpg" alt="Poultry" height="300" width="400" /></a></td>
+            <td><a href="miniatures.html"><img src="miniatures_cover.jpg" alt="Fish" height="300" width="400" /></a></td>
+        </tr>
+    </table>
+    <br />
+    <h2 style="font-size: 50px; color: #5e4c47; font-weight: bold; border: 2px dashed #5e4c47; text-align: center; ">Substitutions</h2>
+    
+    <div class="substitutions">
+        <!--Heading-->
+        <h5 class="no text1 center" style="border: 2px solid black; padding: 20px; font-size: 40px;">INSTEAD OF...</h5>
+        <h5 class="no text2 center" style="border: 2px solid black; padding: 20px; font-size: 40px;">YOU CAN ALSO USE...</h5>
+        <h5 class="notext center"></h5>
+        <!--First Row: 1 egg-->
+        <h5 class="no text3 center">1 EGG</h5>
+        <img src="egg.jpg" width="300" height="300" alt="Egg" class="img1 center" />
+        <img src="arrow.jpg" width="200" height="75" alt="Arrow" class="img2 center" />
+        <h5 class="no text4 center">1/4 CUP OF APPLESAUCE</h5>
+        <img src="applesauce.jpg" width="300" height="300" alt="Applesauce" class="img3 center" />
+        <!--Second Row: 1 cup vegetable oil-->
+        <h5 class="no text5 center">1 CUP VEGETABLE OIL</h5>
+        <img src="vegetable_oil.jpg" width="300" height="300" alt="Oil" class="img4 center" />
+        <img src="arrow.jpg" width="200" height="75" alt="Arrow" class="img5 center" />
+        <h5 class="no text6 center">1 CUP FRUIT PUREE</h5>
+        <img src="fruit_puree.jpg" width="300" height="300" alt="Fruit Puree" class="img6 center" />
+        <!--Third Row: 1 vanilla bean-->
+        <h5 class="no text7 center">1 VANILLA BEAN</h5>
+        <img src="vanilla_bean.jpg" width="300" height="300" alt="Vanilla Bean" class="img7 center" />
+        <img src="arrow.jpg" width="200" height="75" alt="Arrow" class="img8 center" />
+        <h5 class="no text8 center">2  1/2 TSP VANILLA EXTRACT</h5>
+        <img src="vanilla_extract.jpg" width="300" height="300" alt="Vanilla Extract" class="img9 center" />
+        <!--Fourth Row: 3 tbsp cocoa powder-->
+        <h5 class="no text9 center">3 TBSP COCOA POWDER</h5>
+        <img src="cocoa_powder.jpg" width="300" height="300" alt="Cocoa Powder" class="img10 center" />
+        <img src="arrow.jpg" width="200" height="75" alt="Arrow" class="img11 center" />
+        <h5 class="no text10 center">1 OZ UNSWEETENED CHOCOLATE (and reduce fat in recipe by 1 tbsp)</h5>
+        <img src="chocolate.jpg" width="300" height="300" alt="Chocolate" class="img12 center" />
+        <!--Fifth Row: 1/2 tsp baking soda-->
+        <h5 class="no text11 center">1/2 TSP BAKING SODA</h5>
+        <img src="baking_soda.jpg" width="300" height="300" alt="Baking Soda" class="img13 center" />
+        <img src="arrow.jpg" width="200" height="75" alt="Arrow" class="img14 center" />
+        <h5 class="no text12 center">2 TSP BAKING POWDER</h5>
+        <img src="baking_powder.jpg" width="300" height="300" alt="Baking Powder" class="img15 center" />
+        <!--Sixth Row: 1 cup cake flour-->
+        <h5 class="no text13 center">1 CUP CAKE FLOUR</h5>
+        <img src="cake_flour.jpg" width="300" height="300" alt="Cake flour" class="img16 center" />
+        <img src="arrow.jpg" width="200" height="75" alt="Arrow" class="img17 center" />
+        <h5 class="no text14 center">3/4 CUP FLOUR + 2 TBSP CORNSTARCH</h5>
+        <img src="corn_starch.jpg" width="300" height="300" alt="Corn Starch" class="img18 center" />
+        <!--Seventh Row: 1 cup salted butter-->
+        <h5 class="no text15 center">1 CUP SALTED BUTTER</h5>
+        <img src="butter.jpg" width="300" height="300" alt="Butter" class="img19 center" />
+        <img src="arrow.jpg" width="200" height="75" alt="Arrow" class="img20 center" />
+        <h5 class="no text16 center">1 CUP MARGARINE</h5>
+        <img src="margarine.jpg" width="300" height="300" alt="Margarine" class="img21 center" />
+        <!--Eighth Row: 1 cup sour cream-->
+        <h5 class="no text17 center">1 CUP SOUR CREAM</h5>
+        <img src="sour_cream.jpg" width="300" height="300" alt="Sour Cream" class="img22 center" />
+        <img src="arrow.jpg" width="200" height="75" alt="Arrow" class="img23 center" />
+        <h5 class="no text18 center">1 CUP PLAIN YOGURT</h5>
+        <img src="plain_yogurt.jpg" width="300" height="300" alt="Plain Yogurt" class="img24 center" />
+        <!--Ninth Row: 1 envelope active dry yeast-->
+        <h5 class="no text19 center">1 ENVELOPE ACTIVE DRY YEAST</h5>
+        <img src="dry_yeast.jpg" width="300" height="300" alt="Dry Yeast" class="img25 center" />
+        <img src="arrow.jpg" width="200" height="75" alt="Arrow" class="img26 center" />
+        <h5 class="no text20 center">2  1/4 TSP RAPID RISE YEAST</h5>
+        <img src="rapid_rise_yeast.jpg" width="300" height="250" alt="Yeast" class="img27 center" />
+        <!--Tenth Row: Quote-->
+        <img src="quote2.jpg" width="851" height="614" alt="Quote" class="img28 center"/>
+    </div>
+
+</body>
+</html>

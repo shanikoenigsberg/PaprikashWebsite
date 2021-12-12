@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Fish</title>
+    <style>
+        body {
+            font-family: 'Century Gothic';
+        }
+
+        .header {
+            display: inline-grid;
+            grid-template-areas: 'cup survey title';
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .survey_box {
+            grid-area: survey;
+            column-width: auto;
+            justify-self: left;
+            align-self: center;
+            color: grey;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+            .survey_box:hover {
+                text-decoration: underline;
+            }
+
+        .title_box {
+            grid-area: title;
+            column-width: 890px;
+            justify-self: right;
+            align-self: center;
+        }
+
+        .cup_box {
+            grid-area: cup;
+            align-self: center;
+            justify-self: left;
+            border: 0px;
+            padding: 0px;
+            column-width: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4d4341;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-areas: 'box5 box1 box2 box3 box4';
+            background-color: lightgrey;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .home {
+            grid-area: box5;
+        }
+
+        .salads {
+            grid-area: box1;
+        }
+
+        .soups {
+            grid-area: box2;
+        }
+
+        .mains {
+            grid-area: box3;
+        }
+
+        .desserts {
+            grid-area: box4;
+        }
+
+        .nav > a:hover {
+            color: #ab2c0c;
+            font-weight: bold;
+        }
+
+        .title {
+            color: #2c5237;
+            font-size: 50px;
+            text-align: center;
+            font-family: Thin, 'Century Gothic', sans-serif;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        h3 {
+            font-size: 40px;
+            color: #4e5e47;
+            display: inline;
+            border: 2px solid #4e5e47;
+            padding: 5px;
+        }
+
+        .comment {
+            font-size: 20px;
+            color: #695a3e;
+        }
+
+        @font-face {
+            font-family: 'Thin';
+            src: url(raleway-thin.woff);
+        }
+
+        ul {
+            list-style: none; /*Remove default bullets*/
+        }
+
+            ul li:before {
+                content: "\2023";
+                color: #695a3e;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+        .subs {
+            font-size: 35px;
+            color: #768a6d;
+            font-weight: bold;
+        }
+
+        .sub_of_sub {
+            font-size: 25px;
+            color: #5a7d2d;
+            font-weight: bold;
+            border: none;
+        }
+
+        .ingredients {
+            color: #695a3e;
+            font-size: 25px;
+        }
+
+        ol li {
+            padding: 10px;
+        }
+
+        .a:hover {
+            color: #8f9e5c;
+        }
+    </style>
+</head>
+<body>
+    <!--Top- header-->
+    <div class="header">
+        <div class="cup_box"><a href="../Cover/Survey/survey.html"><img src="../Cover/utensil_icon.jpg" alt="Icon" width="50" height="40" style="display: inline;" /></a></div>
+        <div class="survey_box"><a href="../Cover/Survey/survey.html">Take our survey!</a></div>
+        <div class="title_box"><h1 style="margin:25px; padding:25px; color:#ab2c0c; text-align:center; font-size:50px;">paprikash</h1></div>
+    </div>
+    <!--nav bar-->
+    <nav class="nav">
+        <a href="../Cover/cover_page.html" class="home">HOME</a>
+        <a href="../Salads/salads.html" class="salads">SALADS</a>
+        <a href="../Soups/soups.html" class="soups">SOUPS</a>
+        <a href="../Mains/main_courses.html" class="mains">MAIN DISHES</a>
+        <a href="../Desserts/desserts.html" class="desserts">DESSERTS</a>
+    </nav>
+    <br />
+    <h1 class="title" style="border-bottom: 2px solid #2c5237; border-top: 2px solid #2c5237;">Fish</h1>
+    <br />
+    <!--First Fish: Furikake Salmon Bowls-->
+    <img src="salmon_bowls.jpg" width="390" height="550" alt="Furikake Salmon Bowls" style="float: right;" />
+    <h3>Furikake Salmon Bowls</h3>
+    <h4 class="comment">These Furikake Salmon Bowls were dinner tonight- fast and easy to put together and full of great flavor! Furikake, if unfamiliar is a Japanese seasoning that can be purchased at most grocery stores (it’s even a Trader Joes now!) or simply made at home with nori and toasted sesame seeds.</h4>
+    <h4 class="comment">It does wonders for fish, veggies and rice, and that’s how we are using it here. I especially love it on salmon and avocado, so tasty!</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Cooking and Prep: 30 min
+        <br />
+        Serves: 2
+        <br />
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Salmon</h3>
+
+    <div class="ingredients">
+        <ul>
+            <li>1–2 tablespoons sesame oil</li>
+            <li>Pinch of salt, pepper and chili flakes</li>
+            <li>8–10 ounces salmon (2 thick pieces)</li>
+            <li>4 ounces shiitake mushrooms, de-stemmed, sliced ( or use Smoked Mushrooms!)</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Sauce</h3>
+    <div class="ingredients">
+        <ul>
+            <li>3 tablespoons soy sauce</li>
+            <li>3 tablespoons Mirin</li>
+            <li>1 tablespoon Furikake</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Bowl ingredients:</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1  1/2 – 2 cups cooked rice, black rice, quinoa or other grain (optional, or sub more veggies)</li>
+            <li>2 extra large handfuls of shredded cabbage</li>
+            <li>1 avocado, sliced</li>
+            <li>Feel free to add addional roasted veggies or steamed veggies</li>
+        </ul>
+        <p>Garnish: scallions, furikake, cucumber, chili flakes</p>
+    </div>
+    <img src="sear_salmon.jpg" width="390" height="260" alt="Sear Salmon" style="float: right;" />
+    <h4 class="subs">Prepare the Salmon Furikake Bowls</h4>
+    <ol class="ingredients">
+        <li>Set rice or grain to cook, if using.</li>
+        <li>Make Sauce: Mix soy sauce and mirin in a small bowl.</li>
+        <li>
+            If sauteeing the shredded cabbage, do this now, and set aside.
+        </li>
+        <li>Cook Salmon:Heat sesame oil in a large skillet over medium high heat. Season the oil with a pinch of salt, pepper and chili flakes and swirl. Add the salmon and mushrooms, and sear all sides, until golden. Turn heat off, letting pan cool slightly (otherwise sauce may burn).  Spoon sauce overtop of the salmon and mushrooms, swirling the skillet. Set aside.</li>
+        <li>Assemble the bowls: Divide rice or grains between 2 bowls. Sprinkle with furikake. Arrange cabbage, avocado wedges and any other veggies in the bowl. Top with seared salmon and mushrooms, and sprinkle it with Furikake spooning the remaining sauce over the avocado and cabbage.</li>
+        <li>Serve immediately.</li>
+    </ol>
+    <h3 class="sub_of_sub">Nutrition Facts</h3>
+    <table style="border: 2px solid black;">
+        <tr>
+            <td colspan="2" style="border-bottom: 2px solid black;">Serving Size with 1 cup of rice</td>
+        </tr>
+        <tr>
+            <td>Calories</td>
+            <td>636</td>
+        </tr>
+        <tr>
+            <td>Total Fat</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Cholesterol</td>
+            <td>19%</td>
+        </tr>
+        <tr>
+            <td>Sodium</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Total Carbohydrate</td>
+            <td>21%</td>
+        </tr>
+    </table>
+    <hr />
+    <br />
+    <!--Second Fish: Pan-Seared Halibut with Lemony Zucchini Noodles-->
+
+    <h3>Pan-Seared Halibut with Lemony Zucchini Noodles</h3>
+    <img src="halibut.jpg" width="375" height="500" alt="Pan-Seared Halibut with Lemony Zucchini Noodles" style="float: right;" />
+    <h4 class="comment">Here’s a quick and easy weeknight dinner that is low in carbs and full of clean bright flavors. Pan-seared Halibut (or substitute cod, tofu, salmon, sea bass, scallops etc…) served over lemony zucchini noodles with garlic, olive oil and parsley. Top this with sweet, end-of summer tomatoes and you have a delicious healthy dinner in 20 minutes flat. Such simple flavors…. but oh so good!</h4>
+
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Diet: Keto, Low Carb
+        <br />
+        Cooking and Prep: 30 min
+        <br />
+        Serves: 2
+        <br />
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Fish</h3>
+
+    <div class="ingredients">
+        <ul>
+            <li>8–10 ounces halibut (or sub Salmon, Tofu, Sea Bas, Cod, Scallops, Shrimp)</li>
+            <li>1 garlic clove, smashed</li>
+            <li>1–2 tablespoons olive oil</li>
+            <li>salt and pepper to taste</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Noodles</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1 tablespoon olive oil</li>
+            <li>1 fat shallot, sliced thin</li>
+            <li>3 garlic cloves, rough chopped</li>
+            <li>12–16 ounces zucchini noodles (zoodles)</li>
+            <li>salt and pepper to taste</li>
+            <li>2 teaspoons lemon zest</li>
+            <li>½ cup chopped Italian parsley ( or sub ¼ cup basil)</li>
+            <li>1 tablespoon lemon juice (more to taste)</li>
+        </ul>
+        <p>Garnish with sweet cherry tomatoes, chili flakes, shaved pecorino cheese (optional)</p>
+    </div>
+
+    <h4 class="subs">Prepare the Fish</h4>
+    <ol class="ingredients">
+        <li>Preheat oven to 375F (or toaster oven)</li>
+        <li>Heat oil in a medium skillet over medium heat and add smashed garlic clove and swirl to infuse garlic into the oil.</li>
+        <li>
+            Pat fish dry and season with salt and pepper. Sear both sides until golden. (TIP: If you let the fish sear without moving it too much, it will form a crust and release itself naturally from the pan. If it sticks, it is usually that you are moving or lifting it too soon.) Once both sides are golden, place in the warm oven until cooked  through to your liking. (roughly 3 – 6 minutes – time will depend on thickness of the cut)
+        </li>
+        <li>In a large skillet, heat more oil over medium heat and add shallots and garlic, stirring until softened and fragrant, about 3 minutes. Add zucchini noodles and season with salt and pepper. Sauté until noodles  soften, about 4 minutes. Toss in lemon zest, fresh parsley and a squeeze of lemon. Taste for salt and lemon and adjust if necessary. Divide among two bowls and top with the halibut.</li>
+        <li>Garnish with fresh halved cherry tomatoes, and optional chili flakes and shaved pecorino cheese if you like.</li>
+    </ol>
+    <h3 class="sub_of_sub">Nutrition Facts</h3>
+    <table style="border: 2px solid black;">
+        <tr>
+            <td colspan="2" style="border-bottom: 2px solid black;">Serves 2</td>
+        </tr>
+        <tr>
+            <td>Calories</td>
+            <td>381</td>
+        </tr>
+        <tr>
+            <td>Total Fat</td>
+            <td>35%</td>
+        </tr>
+        <tr>
+            <td>Cholesterol</td>
+            <td>17%</td>
+        </tr>
+        <tr>
+            <td>Sodium</td>
+            <td>17%</td>
+        </tr>
+        <tr>
+            <td>Total Carbohydrate</td>
+            <td>6%</td>
+        </tr>
+        <tr>
+            <td>Protein</td>
+            <td>46%</td>
+        </tr>
+    </table>
+    <hr />
+    <br />
+    <!--Third Fish: Sea Bass with Cannellini Bean Stew-->
+    <img src="seabass.jpg" width="310" height="400" alt="Sea Bass with Cannellini Bean Stew" style="float: right;" />
+    <h3>Sea Bass with Cannellini Bean Stew</h3>
+    <h4 class="comment">Simple ingredients come together lovingly, to make this rustic, savory and deeply satisfying Fish Stew.  For a quick weeknight meal, canned cannellini beans may be substituted in this recipe- and from start to finish, this entire recipe can be made in about 30 minutes. A simple nourishing wholesome Mediterranean-style meal.</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Cooking and Prep: 30 min
+        <br />
+        Serves: 4
+        <br />
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Main Ingredients</h3>
+    <img src="seabass_ingredients.jpg" width="400" height="250" alt="Seabass Ingredients" style="float: right; padding: 10px;" />
+    <div class="ingredients">
+        <ul>
+            <li>2 T olive oil</li>
+            <li>1 medium onion, diced</li>
+            <li>1 cup peeled, diced carrot (2 carrots)</li>
+            <li>1 cup diced celery (2 stocks)</li>
+            <li>3–4 smashed and roughly chopped garlic cloves</li>
+            <li>2 cups diced tomatoes ( or one 1 can, diced)</li>
+            <li>3 cups cannellini beans (2 cans rinsed and drained) or 1 ½ C dried and soaked overnight</li>
+            <li>4 cups parve chicken stock</li>
+            <li>1–2 cups water, depending on if using canned or dried beans</li>
+            <li>2 Tablespoons fresh sage ( or thyme, or rosemary)</li>
+            <li>½ teaspoon kosher salt</li>
+            <li>¼ teaspoon cracked pepper</li>
+            <li>4  four-ounce sea bass fillets (or thick-cut true cod, escolar, halibut, black cod)</li>
+            <li>oil, salt and pepper for fish</li>
+            <li>Italian parsley for garnish (or make leek oil or gremolata)</li>
+        </ul>
+    </div>
+    <img src="seabass_cooking.jpg" width="400" height="250" alt="Seabass Cooking" style="float: right; padding: 10px;" />
+    <h4 class="subs">Prepare the Fish</h4>
+    <ol class="ingredients">
+        <li>In a medium-large heavy-bottomed pot, heat oil over medium-high heat. Add onions, and stir for two minutes. Add carrots, celery and garlic, turn heat to medium and sauté for about 5 minutes, stirring occasionally.</li>
+        <li>If using canned beans, add them, along with the stock, 1 cup water, herbs and tomatoes, salt and pepper, and bring to a boil. Turn heat down to low, cover and simmer gently for 10-15 minutes. Alternatively, if using dried beans, make sure to soak them in ample water overnight or up to 24 hours. (This will prevent gastric issues and shorten cooking time. ) After the carrots, celery and garlic have been sautéing for 5 minutes. Add the dried, soaked beans and the stock. Add 2 additional cups water. Add the herbs and salt. Bring to a boil on high heat. Cover, turn to low heat and let simmer 1-1 1/2 hours, or until the beans are tender.  Then add pepper and tomatoes. Continue simmering another ½ hour. If the stew is too brothy for you, leave the lid off and keep it at a gentle simmer, letting it reduce a bit. -however, I really enjoy it brothy.</li>
+        <li>
+            <b>Pan Sear the fish:</b> Heat 1-2 T olive oil in a cast-iron skillet, over medium-high heat. Pat dry fish with paper towels and season generously with kosher salt and pepper. Sear each side until a golden crust forms on the fish, and turn the heat down to cook through to the desired doneness, taking care not to overcook.
+        </li>
+        <li>Place the stew in a wide shallow bowl, top with seared fish and garnish with fresh Italian parsley.</li>
+        <li>If feeling fancy make Gremolata or Leek Oil and drizzle over top.</li>
+    </ol>
+    <hr />
+    <br />
+</body>
+</html>

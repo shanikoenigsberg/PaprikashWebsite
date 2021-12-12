@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Soups</title>
+    <style>
+        body {
+            font-family: 'Century Gothic';
+        }
+
+        .header {
+            display: inline-grid;
+            grid-template-areas: 'cup survey title';
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .survey_box {
+            grid-area: survey;
+            column-width: auto;
+            justify-self: left;
+            align-self: center;
+            color: grey;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+            .survey_box:hover {
+                text-decoration: underline;
+            }
+
+        .title_box {
+            grid-area: title;
+            column-width: 890px;
+            justify-self: right;
+            align-self: center;
+        }
+
+        .cup_box {
+            grid-area: cup;
+            align-self: center;
+            justify-self: left;
+            border: 0px;
+            padding: 0px;
+            column-width: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4d4341;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-areas: 'box5 box1 box2 box3 box4';
+            background-color: lightgrey;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .home {
+            grid-area: box5;
+        }
+
+        .salads {
+            grid-area: box1;
+        }
+
+        .soups {
+            grid-area: box2;
+        }
+
+        .mains {
+            grid-area: box3;
+        }
+
+        .desserts {
+            grid-area: box4;
+        }
+
+        .nav > a:hover {
+            color: #ab2c0c;
+            font-weight: bold;
+        }
+
+        .title {
+            color: #2c5237;
+            font-size: 50px;
+            text-align: center;
+            font-family: 'Century Gothic', sans-serif;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        table {
+            padding: 10px;
+            border-top: 5px solid #2c5237;
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            border-bottom: 2px solid #2c5237;
+        }
+
+        td:first-of-type {
+            border-left: 2px solid #2c5237;
+        }
+
+        td {
+            border-right: 2px solid #2c5237;
+        }
+
+            td > a:hover {
+                font-weight: bold;
+                color: #8e9e62;
+            }
+
+        @font-face {
+            font-family: 'Thin';
+            src: url(raleway-thin.woff);
+        }
+
+        img {
+            padding: 10px;
+        }
+
+        .middle {
+            font-size: 25px;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .background {
+            position: relative;
+            text-align: center;
+        }
+
+        .soup_tips {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+
+        .pic1 {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .txt1 {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .pic2 {
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        .pic3 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .txt2 {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .pic4 {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        .pic5 {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        .txt3 {
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        .pic6 {
+            grid-column: 3;
+            grid-row: 3;
+        }
+
+        .pic7 {
+            grid-column: 1;
+            grid-row: 4;
+        }
+
+        .txt4 {
+            grid-column: 2;
+            grid-row: 4;
+        }
+
+        .pic8 {
+            grid-column: 3;
+            grid-row: 4;
+        }
+
+        .eat_container {
+            display: grid;
+            justify-content: center;
+        }
+
+        .eat {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        a:hover {
+            color: #8e9e62;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="cup_box"><a href="../Cover/Survey/survey.html"><img src="../Cover/utensil_icon.jpg" alt="Icon" width="50" height="40" style="display: inline;" /></a></div>
+        <div class="survey_box"><a href="../Cover/Survey/survey.html">Take our survey!</a></div>
+        <div class="title_box"><h1 style="margin:25px; padding:25px; color:#ab2c0c; text-align:center; font-size:50px;">paprikash</h1></div>
+    </div>
+    <nav class="nav">
+        <a href="../Cover/cover_page.html" class="home">HOME</a>
+        <a href="../Salads/salads.html" class="salads">SALADS</a>
+        <a href="../Soups/soups.html" class="soups">SOUPS</a>
+        <a href="../Mains/main_courses.html" class="mains">MAIN DISHES</a>
+        <a href="../Desserts/desserts.html" class="desserts">DESSERTS</a>
+    </nav>
+    <br />
+    <h1 class="title" style="text-align: center;">SOUPS</h1>
+    <table style="width: 100%;">
+        <tr style="font-size: 30px;">
+            <td><a href="meat_soups.html">Meat Soups</a></td>
+            <td><a href="dairy_soups.html">Dairy Soups</a></td>
+            <td><a href="vegetable_soups.html">Vegetable Soups</a></td>
+        </tr>
+        <tr>
+            <td><a href="meat_soups.html"><img src="beef_soup.jpg" width="325" height="300" alt="Meat Soup" /></a></td>
+            <td><a href="dairy_soups.html"><img src="dairy_soup.jpg" width="450" height="300" alt="Dairy Soup" /></a></td>
+            <td><a href="vegetable_soups.html"><img src="vegetable_soup.jpg" width="325" height="300" alt="Vegetable Soup" /></a></td>
+        </tr>
+    </table>
+
+    <h2 style="font-size: 40px; border-bottom: 2px solid brown; color: brown; text-align: center;">Searching for tips for soup recipes? Read On!</h2>
+    <div class="soup_tips">
+        <img src="soup1.jpg" width="325" height="400" alt="Soup" class="pic1" />
+        <p class="txt1 middle">
+            1. <b>Season to taste.</b> Raw vegetable ingredients need seasoning, and vegetable broths vary in salt level.
+            If your soup is bland, don’t hesitate to add generous pinches of salt and lots of fresh black pepper. Taste as you go!
+        </p>
+        <img src="soup2.jpg" width="325" height="400" alt="Soup" class="pic2" />
+        <img src="soup3.jpg" width="325" height="400" alt="Soup" class="pic3" />
+        <p class="txt2 middle">
+            2. <b>Drizzle with olive oil.</b> I always finish soups with a generous drizzle of olive oil.
+            It adds richness and makes the flavors sing.
+        </p>
+        <img src="soup4.jpg" width="325" height="400" alt="Soup" class="pic4" />
+        <img src="soup5.jpg" width="325" height="400" alt="Soup" class="pic5" />
+        <p class="txt3 middle">
+            3. <b>Save some for lunch!</b> Soup often tastes better on the second day, so be sure to make enough to have leftovers.
+            Most soup recipes also freeze well for up to a few months. Check out this post for my best freezing tips!
+        </p>
+        <img src="soup6.jpg" width="325" height="400" alt="Soup" class="pic6" />
+        <img src="soup7.jpg" width="325" height="400" alt="Soup" class="pic7" />
+        <p class="txt4 middle">
+            4. <b>Spice to your level.</b> Customizing your soup is the fun, creative part of cooking soup recipes. If you’re making a recipe that calls for lots of spice but you prefer milder flavors, start with less.
+            If you like things spicy, add more! Taste as you cook, and adjust the flavors to make something you really love.
+        </p>
+        <img src="soup8.jpg" width="325" height="400" alt="Soup" class="pic8" />
+    </div>
+    <h2 style="font-size: 40px; border-bottom: 2px solid brown; color: brown; text-align: center;">Tips for making the best soups!</h2>
+    <div class="background">
+        <img src="soup9.1.jpg" width="1151" height="276" alt="Soup" style="position: relative; z-index: -1; opacity: .7; text-align: center;  " />
+        <table>
+            <tr>
+                <th style="border: none; font-size: 25px;">Chop in spoon sizes</th>
+                <th style="border: none; font-size: 25px;">Salt your soup sparingly</th>
+            </tr>
+            <tr>
+                <td style="border: none; font-size: 25px;">
+                    When chopping vegetables, think about how big you want them to be on the spoon. Even hearty, rustic soups should have well chopped, reasonably sized vegetables.
+                    Greens such as spinach and kale also need to be chopped, or they will be difficult to eat.
+                </td>
+                <td style="border: none; font-size: 25px;">
+                    Depending on the ingredients you’re adding, you don’t always know how much salt is going in. Many stocks have high levels of sodium, as do canned beans, vegetables and tomato paste.
+                    For this reason, save most of your seasoning until the end. Taste and adjust with salt and pepper as needed.
+                </td>
+            </tr>
+        </table>
+        <img src="soup9.2.jpg" alt="Soup" style="opacity: .7; text-align: center;" />
+        <table>
+            <tr>
+                <th style="font-size: 25px;">Take stock of your stock</th>
+                <th style="font-size: 25px;">Simmer, simmer, simmer</th>
+            </tr>
+            <tr>
+                <td style="border: none; font-size: 25px;">
+                    When it comes to making clear, brothy soups, the stock that you use is the most important ingredient. Poorly flavoured stock will ruin the entire pot of soup. For clear soups, homemade broth is always the best choice.
+                    If that isn’t an option for you, purchase butcher’s broth instead of grocery store brands. (You can cheat puréed and cream soups with canned broth in a pinch.)
+                </td>
+                <td style="border: none; font-size: 25px; ">
+                    Once soup has come to a boil, reduce to a simmer and make sure that it stays there.
+                    Boil things too vigorously, and the vegetables will get mushy, the meat will toughen, and the noodles will start to break down.
+                </td>
+            </tr>
+        </table>
+        <img src="soup9.3.jpg" width="1159" height="272" alt="Soup" style="opacity: .7; text-align: center;" />
+        <table>
+            <tr>
+                <th style="font-size: 25px;">Know your noodles</th>
+                <th style="font-size: 25px;">Portion the servings</th>
+            </tr>
+            <tr>
+                <td style="border: none; font-size: 25px;">
+                    When making noodle soups, do not cook the noodles separately. Add noodles as the final addition, and cook until tender, allowing the noodles to take on the flavour of the soup. Noodles that are cooked separately will lack flavour and break down when added.
+                    But: If you plan on freezing your soup, don’t add the noodles. Instead add them once it has been thawed and brought back to a boil. The noodles will taste much fresher this way.
+                </td>
+                <td style="border: none; font-size: 25px;">
+                    If you’re serving a hot soup, make sure it’s just that — piping hot. Also, the ideal serving size for an appetizer portion is about 1 cup (250ml), while a meal portion is about 1 1/3 cups (350ml).
+                </td>
+            </tr>
+        </table>
+        <img src="soup9.4.jpg" width="1160" height="269" alt="Soup" style="opacity: .7; text-align: center;" />
+        <table>
+            <tr>
+                <th style="font-size: 30px; "><a href="https://www.chatelaine.com/recipes/cooking-videos/how-to-blend-and-puree-soup/">For tips on how to blend and puree soup,<u>click here.</u></a></th>
+            </tr>
+            <tr>
+                <th style="font-size: 30px;">ENJOY!</th>
+            </tr>
+        </table>
+    </div>
+    <div class="eat_container"><img src="soup_quote.jpg" width="450" height="200" alt="Soup Quote" class="eat" /></div>
+</body>
+</html>

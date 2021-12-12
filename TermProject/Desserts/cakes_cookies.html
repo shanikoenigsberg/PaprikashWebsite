@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Cakes and Cookies</title>
+    <style>
+        body {
+            font-family: 'Century Gothic';
+        }
+
+        .header {
+            display: inline-grid;
+            grid-template-areas: 'cup survey title';
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .survey_box {
+            grid-area: survey;
+            column-width: auto;
+            justify-self: left;
+            align-self: center;
+            color: grey;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+            .survey_box:hover {
+                text-decoration: underline;
+            }
+
+        .title_box {
+            grid-area: title;
+            column-width: 890px;
+            justify-self: right;
+            align-self: center;
+        }
+
+        .cup_box {
+            grid-area: cup;
+            align-self: center;
+            justify-self: left;
+            border: 0px;
+            padding: 0px;
+            column-width: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4d4341;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-areas: 'box5 box1 box2 box3 box4';
+            background-color: lightgrey;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .home {
+            grid-area: box5;
+        }
+
+        .salads {
+            grid-area: box1;
+        }
+
+        .soups {
+            grid-area: box2;
+        }
+
+        .mains {
+            grid-area: box3;
+        }
+
+        .desserts {
+            grid-area: box4;
+        }
+
+        .nav > a:hover {
+            color: #ab2c0c;
+            font-weight: bold;
+        }
+
+        .title {
+            color: #2c5237;
+            font-size: 50px;
+            text-align: center;
+            font-family: Thin, 'Century Gothic', sans-serif;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        h3 {
+            font-size: 40px;
+            color: #4e5e47;
+            display: inline;
+            border: 2px solid #4e5e47;
+            padding: 5px;
+        }
+
+        .comment {
+            font-size: 20px;
+            color: #695a3e;
+        }
+
+        @font-face {
+            font-family: 'Thin';
+            src: url(raleway-thin.woff);
+        }
+
+        ul {
+            list-style: none; /*Remove default bullets*/
+        }
+
+            ul li:before {
+                content: "\2023";
+                color: #695a3e;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+        .subs {
+            font-size: 35px;
+            color: #768a6d;
+            font-weight: bold;
+        }
+
+        .sub_of_sub {
+            font-size: 25px;
+            color: #5a7d2d;
+            font-weight: bold;
+            border: none;
+        }
+
+        .ingredients {
+            color: #695a3e;
+            font-size: 25px;
+        }
+
+        ol li {
+            padding: 10px;
+        }
+
+        .a:hover {
+            color: #8f9e5c;
+        }
+    </style>
+</head>
+<body>
+    <!--Top- header-->
+    <div class="header">
+        <div class="cup_box"><a href="../Cover/Survey/survey.html"><img src="../Cover/utensil_icon.jpg" alt="Icon" width="50" height="40" style="display: inline;" /></a></div>
+        <div class="survey_box"><a href="../Cover/Survey/survey.html">Take our survey!</a></div>
+        <div class="title_box"><h1 style="margin:25px; padding:25px; color:#ab2c0c; text-align:center; font-size:50px;">paprikash</h1></div>
+    </div>
+    <!--nav bar-->
+    <nav class="nav">
+        <a href="../Cover/cover_page.html" class="home">HOME</a>
+        <a href="../Salads/salads.html" class="salads">SALADS</a>
+        <a href="../Soups/soups.html" class="soups">SOUPS</a>
+        <a href="../Mains/main_courses.html" class="mains">MAIN DISHES</a>
+        <a href="../Desserts/desserts.html" class="desserts">DESSERTS</a>
+    </nav>
+    <br />
+    <h1 class="title" style="border-bottom: 2px solid #2c5237; border-top: 2px solid #2c5237;">Cakes and Cookies</h1>
+    <br />
+    <!--First Cake: Ginger-Glazed Lemon Bundt-->
+    <img src="lemon_bundt.jpg" width="450" height="450" alt="Ginger-Glazed Lemon Bundt" style="float: right;" />
+    <h3>Ginger-Glazed Lemon Bundt</h3>
+    <h4 class="comment">Tangy ginger, tart lemon and puckery cranberries make this melt-in-your-mouth cake as crisp—and gorgeous—as autumn.</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Cooking and Prep: 1 hr and 20 min + cooling
+        <br />
+        Serves: 6
+        <br />
+        Allergies: Contains GLUTEN, WHEAT, EGG, DAIRY
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Sugared Cranberries</h3>
+    <div class="ingredients">
+        <ul>
+            <li>3 tablespoons light corn syrup</li>
+            <li>1 cup fresh or frozen, thawed cranberries</li>
+            <li>1/3 cup sugar</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Cake</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1 cup butter, softened</li>
+            <li>2 cups sugar</li>
+            <li>4 large eggs, room temperature</li>
+            <li>2 tablespoons grated lemon zest</li>
+            <li>1 teaspoon lemon extract</li>
+            <li>2-1/2 cups all-purpose flour</li>
+            <li>2 teaspoons baking powder</li>
+            <li>1/2 teaspoon salt</li>
+            <li>1 cup fat-free vanilla Greek yogurt</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Glaze</h3>
+    <div class="ingredients">
+        <ul>
+            <li>2/3 cup confectioners' sugar</li>
+            <li>2 tablespoons butter, melted</li>
+            <li>1 to 3 teaspoons lemon juice</li>
+            <li>1/2 teaspoon ground ginger</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Cake</h4>
+    <ol class="ingredients">
+        <li>
+            For sugared cranberries, heat corn syrup in a microwave until warm; gently toss cranberries in syrup, allowing excess to drip off. Toss in sugar to coat. Place on waxed paper; let stand until set, about 1 hour.
+        </li>
+        <li>Preheat oven to 325°. Grease and flour a 10-in. fluted tube pan. In a large bowl, cream butter and sugar until light and fluffy, 5-7 minutes. Add eggs, 1 at a time, beating well after each addition. Beat in lemon zest and extract.</li>
+        <li>
+            In another bowl, whisk flour, baking powder and salt; add to creamed mixture alternately with yogurt, beating well after each addition.
+        </li>
+        <li>
+            Transfer to prepared pan. Bake 60-70 minutes or until cake is ready.
+            <a class="a" style="text-decoration: underline;" href="#cakeVideo">Click here to learn how to see if your cake is ready (at the bottom of this page).</a>
+            Cool in pan 10 minutes before removing to a wire rack to cool completely.
+        </li>
+        <li>Mix confectioners' sugar, butter, lemon juice and ginger until smooth. Drizzle over cake. Top with sugared cranberries.</li>
+    </ol>
+    <hr />
+    <br />
+    <!--Second Cake: Layered Truffle Cake with Magic Cream-->
+    <img src="truffle_cake.jpg" width="450" height="350" alt="Layered Truffle Cake with Magic Cream" style="float: right;" />
+    <h3>Layered Truffle Cake with Magic Cream</h3>
+    <h4 class="comment">This cake is what dreams are made of. All the effort that goes into making this cake is 100% worth it. The cake is rich, the nuts add flavor and texture, the cream is luscious and delicious. Put that all together and you have this amazing dessert that freezes beautifully and tastes incredible. The only thing you may regret about making this cake is the amount of calories you may consume!</h4>
+    <p class="comment">
+        Difficulty: Medium
+        <br />
+        Diet: Vegetarian , Pescetarian , Salt Free
+        <br />
+        Cooking and Prep: 4 hrs
+        <br />
+        Serves: 6
+        <br />
+        Allergies: Contains GLUTEN, NUTS, WHEAT, EGG
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Main Ingredients</h3>
+
+    <div class="ingredients">
+        <ul>
+            <li>16 eggs</li>
+            <li>1 and 1/2 cups sugar</li>
+            <li>1 and 3/4 cups Gefen Confectioners' Sugar</li>
+            <li>8 ounces truffle-filled chocolate, melted</li>
+            <li>8 ounces baking chocolate, melted</li>
+            <li>1 pound margarine</li>
+            <li>1 and 1/2 cups ground walnuts or filberts</li>
+            <li>1 and 1/2 cups chopped walnuts or filberts</li>
+            <li>3/4 cup flour</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Cake</h4>
+    <ol class="ingredients">
+        <li>Beat eggs until stiff. Add sugars and beat until peaks form. Set aside in refrigerator.</li>
+        <li>Beat yolks and margarine on high speed until fluffy. Add chocolate and mix only until smooth.</li>
+        <li>
+            Gently fold in egg whites. Fold in ground nuts.
+        </li>
+        <li>Reserve two cups of batter to be used as frosting.</li>
+        <li>Add chopped nuts and flour to batter, mix well.</li>
+        <li>Pour batter into two lined cookie sheets. Bake at 350 degrees Fahrenheit for 25-30 minutes. Cool. Freeze for three hours.</li>
+        <li>Spread frosting over one cake layer. Invert second cake layer over frosted cake. Frost top of cake.</li>
+        <li>Can be garnished with grated chocolate. Cut into 1- and- 1/4-inch squares. (Cake cuts best while frozen). Serve chilled.</li>
+    </ol>
+    <br />
+    <hr />
+    <!--Third Cake/Cookies: Layered Truffle Cake with Magic Cream-->
+    <img src="chocolate_chip_cookies.jpg" width="450" height="350" alt="Chocolate Chunk Cookies" style="float: right;" />
+    <h3>Chocolate Chunk Cookies</h3>
+    <h4 class="comment">These chocolate chunk cookies will leave you with pockets of melted chocolate and a swirl action that will leave you wanting more.</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Diet: Vegetarian , Pescetarian
+        <br />
+        Cooking and Prep: 25 min
+        <br />
+        Serves: 24
+        <br />
+        Allergies: Contains GLUTEN, DAIRY, WHEAT, EGG
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Main Ingredients</h3>
+
+    <div class="ingredients">
+        <ul>
+            <li>5 ounces chocolate, chopped to chunks (2/3 cup)</li>
+            <li>2 and 1/2 cups all-purpose flour</li>
+            <li>1 and 1/2 teaspoons Gefen Baking Soda</li>
+            <li>1 teaspoon salt</li>
+            <li>2 sticks (1 cup) unsalted butter, room temperature</li>
+            <li>1 cup dark brown sugar, packed</li>
+            <li>1/3 cup white sugar</li>
+            <li>2 large eggs</li>
+            <li>1 and 1/2 teaspoons Gefen Vanilla Extract</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Cake</h4>
+    <ol class="ingredients">
+        <li>Preheat your oven to 350 degrees Fahrenheit and line a baking tray with a silicone baking mat or Gefen Easy Baking Parchment Paper.</li>
+        <li>In a medium-sized bowl, whisk together the all-purpose flour, baking soda, and salt. Set aside.</li>
+        <li>
+            Using your stand mixer fitted with the paddle attachment beat the butter slightly, about 30 seconds.
+        </li>
+        <li>Add in the brown and white sugars to the butter and mix until light and fluffy, about three minutes.</li>
+        <li>Add the eggs and the vanilla extract into the mixer and mix until combined. Using a cookie scoop, scoop the cookie dough onto your cookie sheet, leaving about one and a half inches in between each cookie, and bake for 12 minutes.</li>
+    </ol>
+    <p><b>Note:</b> Make sure not to over-bake these cookies. Every oven is different, so make sure not to bake them longer than 15 minutes because they will continue cooking on the baking sheet. You can use chocolate chips instead of chunks to make these classic chocolate chip cookies. You do not need to limit yourself to a plain chocolate bar. Add in whatever flavors you love.</p>
+    <br />
+
+    <h2 style="color: #d4b055; border-bottom: 2px solid #d4b055; border-top: 2px solid #d4b055; font-size: 40px; padding: 5px; text-align: center;">How to check if your cake is ready</h2>
+    <div style="text-align: center;"><iframe id="cakeVideo" width="560" height="315" src="https://www.youtube.com/embed/BV5BBhbeH3s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</body>
+</html>

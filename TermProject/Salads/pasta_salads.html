@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Pasta Salads</title>
+    <style>
+    body {
+    font-family: 'Century Gothic';
+    }
+
+    .header {
+    display: inline-grid;
+    grid-template-areas: 'cup survey title';
+    font-family: Century Gothic, Sans-Serif;
+    }
+
+    .survey_box {
+    grid-area: survey;
+    column-width: auto;
+    justify-self: left;
+    align-self: center;
+    color: grey;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    }
+
+    .survey_box:hover {
+    text-decoration: underline;
+    }
+
+    .title_box {
+    grid-area: title;
+    column-width: 890px;
+    justify-self: right;
+    align-self: center;
+    }
+
+    .cup_box {
+    grid-area: cup;
+    align-self: center;
+    justify-self: left;
+    border: 0px;
+    padding: 0px;
+    column-width: 0px;
+    }
+
+    a {
+    text-decoration: none;
+    color: #4d4341;
+    }
+
+    .nav {
+    display: grid;
+    grid-template-areas: 'box5 box1 box2 box3 box4';
+    background-color: lightgrey;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    font-family: Century Gothic, Sans-Serif;
+    }
+
+    .home {
+    grid-area: box5;
+    }
+
+    .salads {
+    grid-area: box1;
+    }
+
+    .soups {
+    grid-area: box2;
+    }
+
+    .mains {
+    grid-area: box3;
+    }
+
+    .desserts {
+    grid-area: box4;
+    }
+
+    .nav > a:hover {
+    color: #ab2c0c;
+    font-weight: bold;
+    }
+
+        .title {
+            color: #2c5237;
+            font-size: 50px;
+            text-align: center;
+            font-family: Thin, 'Century Gothic', sans-serif;
+            padding: 10px;
+            margin: 0px;
+        }
+
+    h3 {
+    font-size: 40px;
+    color: #4e5e47;
+    display: inline;
+    border: 2px solid #4e5e47;
+    padding: 5px;
+    }
+
+    .comment {
+    font-size: 20px;
+    color: #695a3e;
+    }
+
+    @font-face {
+    font-family: 'Thin';
+    src: url(raleway-thin.woff);
+    }
+
+    ul {
+    list-style: none; /*Remove default bullets*/
+    }
+
+    ul li:before {
+    content: "\2023";
+    color: #695a3e;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    }
+
+    .subs {
+    font-size: 35px;
+    color: #768a6d;
+    font-weight: bold;
+    }
+    .sub_of_sub {
+    font-size: 25px;
+    color: #5a7d2d;
+    font-weight: bold;
+    border: none;
+    }
+
+    .ingredients {
+    color: #695a3e;
+    font-size: 25px;
+    }
+
+    ol li {
+    padding: 10px;
+    }
+        .a:hover {
+            color: #8f9e5c;
+        }
+</style>
+
+</head>
+<body>
+    <!--Top- header-->
+    <div class="header">
+        <div class="cup_box"><a href="../Cover/Survey/survey.html"><img src="../Cover/utensil_icon.jpg" alt="Icon" width="50" height="40" style="display: inline;" /></a></div>
+        <div class="survey_box"><a href="../Cover/Survey/survey.html">Take our survey!</a></div>
+        <div class="title_box"><h1 style="margin:25px; padding:25px; color:#ab2c0c; text-align:center; font-size:50px;">paprikash</h1></div>
+    </div>
+    <!--nav bar-->
+    <nav class="nav">
+        <a href="../Cover/cover_page.html" class="home">HOME</a>
+        <a href="../Salads/salads.html" class="salads">SALADS</a>
+        <a href="../Soups/soups.html" class="soups">SOUPS</a>
+        <a href="../Mains/main_courses.html" class="mains">MAIN DISHES</a>
+        <a href="../Desserts/desserts.html" class="desserts">DESSERTS</a>
+    </nav>
+    <br />
+
+    <h1 class="title" style="border-bottom: 2px solid #2c5237; border-top: 2px solid #2c5237;">Pasta Salads</h1>
+    <br />
+    <div style="text-align: center; font-size: 25px; padding: 10px; color:#4e5e47;">
+        <a href="https://www.thekitchn.com/5-mistakes-to-avoid-when-making-pasta-salad-cooking-mistakes-219878">
+            BEFORE READING ON,
+            <b><u class="a">Click here</u></b> To View 5 Mistakes to Avoid When Making Pasta Salads
+        </a>
+    </div>
+    <br />
+    <br />
+    <!--First Salad: Tricolor Pasta Salad-->
+    <img src="tricolor_pasta_salad.jpg" width="450" height="350" alt="Tricolor Pasta Salad" style="float: right;" />
+    <h3>Tricolor Pasta Salad</h3>
+    <h4 class="comment">Pretty on your table and an every-time favorite!</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Diet: Vegetarian , Vegan , Pescetarian
+        <br />
+        Cooking and Prep: 30 min
+        <br />
+        Serves: 8
+        <br />
+        Allergy: contains GLUTEN
+        <br />
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Salad Ingredients</h3>
+    <div class="ingredients">
+        <ul>
+            <li>8 ounces <a href="https://www.amazon.in/Tuscanini-Gourmet-Italian-Fusilli-Color/dp/B07JG197NG"><b class="a">Tuscanini Pasta Fusili</b></a> or other tricolor pasta, cooked</li>
+            <li>1 small red onion</li>
+            <li>1 red pepper</li>
+            <li>1 green pepper</li>
+            <li>1 stalk celery</li>
+            <li>1 carrot, diced</li>
+            <li>1 can Gefen Baby Corn, drained</li>
+            <li>1 can Israeli pickles in brine (optional)</li>
+            <li>10 ounces Gefen Olives (optional)</li>
+        </ul>
+    </div>
+    <img src="tricolor_pasta.jpg" width="320" height="225" alt="Tricolor Pasta" style="float: right;" />
+    <h3 class="sub_of_sub">Dressing #1</h3>
+    <div class="ingredients">
+        <ul>
+            <li>3/4 cup Gefen Mayonnaise</li>
+            <li>1 tablespoon sugar</li>
+            <li>1 tablespoon salt</li>
+            <li>dash of black pepper</li>
+            <li>1/3 cup vinegar</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Dressing #2</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1/4 cup vinegar</li>
+            <li>1/4 cup oil</li>
+            <li>1/2 cup sugar</li>
+            <li>4 teaspoons water</li>
+            <li>dash of Gefen Garlic Powder</li>
+            <li>2 teaspoons salt</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Salad</h4>
+    <ol class="ingredients">
+        <li>Cook pasta and rinse. </li>
+        <li>Dice ﬁrst six vegetables and add to pasta.</li>
+        <li>
+            Slice olives in half. Drain and dice Israeli pickles. Add olives and pickles to salad.
+            Add all the diced vegetables.
+        </li>
+        <li>In a separate bowl, mix dressing ingredients of your choice; pour over salad, and mix.</li>
+    </ol>
+    <hr />
+    <br />
+    <!--Second Salad: Tomato Basil Pasta Salad-->
+    <img src="tomato_basil_pasta_salad.jpg" width="450" height="350" alt="Tomato Basil Pasta Salad" style="float: right;" />
+    <h3>Tomato Basil Pasta Salad</h3>
+    <br />
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Diet: Vegetarian , Vegan , Pescetarian , Low Fat , No Refined Sugar
+        <br />
+        Cooking and Prep: 45 min
+        <br />
+        Serves: 6
+        <br />
+        Allergy: contains GLUTEN
+        <br />
+        Author: Kosher.com
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <div class="ingredients">
+        <ul>
+            <li>3/4 box Tuscanini Spaghetti Pasta or other thin spaghetti</li>
+            <li>1/3 cup diced scallions</li>
+            <li>4 cloves garlic</li>
+            <li>Gefen Olive Oil</li>
+            <li>1-28 ounce can whole tomatoes</li>
+            <li>2 teaspoon basil</li>
+            <li>salt, to taste</li>
+            <li>black pepper, to taste</li>
+        </ul>
+    </div>
+    <img src="tomatoes.jpg" width="450" height="225" alt="Dressing" style="float: right;" />
+    <h4 class="subs">Prepare the Salad</h4>
+    <ol class="ingredients">
+        <li>Cook and drain spaghetti according to package directions. </li>
+        <li>Sauté scallions and garlic in olive oil for 10 minutes on low ﬂame. Dice tomatoes and add to pot. Add remaining ingredients.</li>
+        <li>Cover and cook for 15 to 20 minutes over low ﬂame. </li>
+        <li>Stir spaghetti into tomato mixture. Serve chilled</li>
+    </ol>
+    <hr />
+    <br />
+    <!--Third Salad: Roasted Cherry Tomato and Ricotta Pasta Salad-->
+    <h3>Roasted Cherry Tomato and Ricotta Pasta Salad</h3>
+    <h4 class="comment">Oven-roasted tomatoes and fresh ricotta top this delicious classic pasta salad.</h4>
+    <img src="tomato_ricotta_pasta_salad.jpg" width="500" height="350" alt="Roasted Cherry Tomato and Ricotta Pasta Salad" style="float: right;" />
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Diet: Vegetarian, Pescetarian
+        <br />
+        Cooking and Prep: 30 min
+        <br />
+        Serves: 6
+        <br />
+        Allergy: contains GLUTEN, DAIRY
+        <br />
+        Author: KosherScoop.com
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <div class="ingredients">
+        <ul>
+            <li>1 pound pasta, such as rigatoni or Tuscanini Penne Pasta</li>
+            <li>1 pint cherry tomatoes, halved (about 2 cups)</li>
+            <li>2 tablespoons Bartenura Olive Oil, plus more for serving</li>
+            <li>Haddar Kosher Salt</li>
+            <li>black pepper</li>
+            <li>10 sprigs fresh thyme</li>
+            <li>1 and 1/2 cups fresh ricotta</li>
+            <li>zest of 1 lemon</li>
+        </ul>
+    </div>
+    <img src="tomato_ricotta.jpg" width="500" height="450" alt="Ingredients" style="float: right;" />
+    <h4 class="subs">Roast the Tomatoes</h4>
+    <ol class="ingredients">
+        <li>Preheat oven to 425 degrees Fahrenheit.</li>
+        <li>Arrange the tomatoes in a single layer on a baking sheet. Drizzle with oil, season with half a teaspoon salt and a quarter-teaspoon pepper. Scatter thyme on top</li>
+        <li>Place tomatoes in oven and bake until soft, about 15–20 minutes. Set aside to cool.</li>
+    </ol>
+    <h4 class="subs">Assemble</h4>
+    <ol class="ingredients">
+        <li>Divide pasta among six large bowls. Spoon some of the ricotta over each serving. Top with tomatoes and thyme.</li>
+        <li>Drizzle with the oil and sprinkle with the lemon zest and pepper to taste just before serving.</li>
+    </ol>
+    <p>
+        <b>Note: </b>Adapted from Stephana Bottom, Real Simple magazine, June 2004.
+    </p>
+    <hr />
+    <br />
+</body>
+</html>

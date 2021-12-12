@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Poultry</title>
+    <style>
+        body {
+            font-family: 'Century Gothic';
+        }
+
+        .header {
+            display: inline-grid;
+            grid-template-areas: 'cup survey title';
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .survey_box {
+            grid-area: survey;
+            column-width: auto;
+            justify-self: left;
+            align-self: center;
+            color: grey;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+            .survey_box:hover {
+                text-decoration: underline;
+            }
+
+        .title_box {
+            grid-area: title;
+            column-width: 890px;
+            justify-self: right;
+            align-self: center;
+        }
+
+        .cup_box {
+            grid-area: cup;
+            align-self: center;
+            justify-self: left;
+            border: 0px;
+            padding: 0px;
+            column-width: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4d4341;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-areas: 'box5 box1 box2 box3 box4';
+            background-color: lightgrey;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .home {
+            grid-area: box5;
+        }
+
+        .salads {
+            grid-area: box1;
+        }
+
+        .soups {
+            grid-area: box2;
+        }
+
+        .mains {
+            grid-area: box3;
+        }
+
+        .desserts {
+            grid-area: box4;
+        }
+
+        .nav > a:hover {
+            color: #ab2c0c;
+            font-weight: bold;
+        }
+
+        .title {
+            color: #2c5237;
+            font-size: 50px;
+            text-align: center;
+            font-family: Thin, 'Century Gothic', sans-serif;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        h3 {
+            font-size: 40px;
+            color: #4e5e47;
+            display: inline;
+            border: 2px solid #4e5e47;
+            padding: 5px;
+        }
+
+        .comment {
+            font-size: 20px;
+            color: #695a3e;
+        }
+
+        @font-face {
+            font-family: 'Thin';
+            src: url(raleway-thin.woff);
+        }
+
+        ul {
+            list-style: none; /*Remove default bullets*/
+        }
+
+            ul li:before {
+                content: "\2023";
+                color: #695a3e;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+        .subs {
+            font-size: 35px;
+            color: #768a6d;
+            font-weight: bold;
+        }
+
+        .sub_of_sub {
+            font-size: 25px;
+            color: #5a7d2d;
+            font-weight: bold;
+            border: none;
+        }
+
+        .ingredients {
+            color: #695a3e;
+            font-size: 25px;
+        }
+
+        ol li {
+            padding: 10px;
+        }
+
+        .a:hover {
+            color: #8f9e5c;
+        }
+        .chicken {
+            text-align: center;
+            color: #cfa47c;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Top- header-->
+    <div class="header">
+        <div class="cup_box"><a href="../Cover/Survey/survey.html"><img src="../Cover/utensil_icon.jpg" alt="Icon" width="50" height="40" style="display: inline;" /></a></div>
+        <div class="survey_box"><a href="../Cover/Survey/survey.html">Take our survey!</a></div>
+        <div class="title_box"><h1 style="margin:25px; padding:25px; color:#ab2c0c; text-align:center; font-size:50px;">paprikash</h1></div>
+    </div>
+    <!--nav bar-->
+    <nav class="nav">
+        <a href="../Cover/cover_page.html" class="home">HOME</a>
+        <a href="../Salads/salads.html" class="salads">SALADS</a>
+        <a href="../Soups/soups.html" class="soups">SOUPS</a>
+        <a href="../Mains/main_courses.html" class="mains">MAIN DISHES</a>
+        <a href="../Desserts/desserts.html" class="desserts">DESSERTS</a>
+    </nav>
+    <br />
+    <h1 class="title" style="border-bottom: 2px solid #2c5237; border-top: 2px solid #2c5237;">Poultry</h1>
+    <br />
+    <!--First Poultry: Chicken Marbella-->
+    <img src="chicken.jpg" width="450" height="350" alt="Chicken Marbella" style="float: right;" />
+    <h3>Chicken Marbella</h3>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Diet: Gluten Free
+        <br />
+        Cooking and Prep: 9.5 hrs
+        <br />
+        Serves: 4
+        <br />
+        Allergy: No Allergens
+        <br />
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Main Ingredients</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1 whole chicken, cut in quarters</li>
+            <li>1 cup pitted prunes</li>
+            <li>1/2 cup Gefen Pitted Green Olives</li>
+            <li>1/2 cup capers (with 3 teaspoons liquid)</li>
+            <li>1/4 cup dried oregano</li>
+            <li>1/2 cup Tonnelli Red Wine Vinegar</li>
+            <li>1/2 cup olive oil</li>
+            <li>1 head garlic, minced</li>
+            <li>kosher salt</li>
+            <li>pepper</li>
+            <li>1 cup brown sugar</li>
+            <li>1 cup Baron Herzog Chenin Blanc or other white wine</li>
+            <li>1/2 cup fresh parsley</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Chicken</h4>
+    <ol class="ingredients">
+        <li>Preheat oven to 350 degrees Fahrenheit.</li>
+        <li>Combine prunes, olives, capers, caper liquid, oregano, vinegar, olive oil and garlic in large shallow ovenproof dish. Season with salt and pepper.</li>
+        <li>
+            Combine prunes, olives, capers, caper liquid, oregano, vinegar, olive oil and garlic in large shallow ovenproof dish. Season with salt and pepper.
+        </li>
+        <li>Uncover chicken and sprinkle with brown sugar.</li>
+        <li>Pour wine over chicken and bake one hour covered. Uncover chicken and bake 30 minutes or until golden brown.</li>
+        <li>Broil for five minutes, if you prefer the skin lightly brown. Garnish with parsley.</li>
+    </ol>
+    <p><b>Note:</b> Allowing chicken to marinate overnight is essential to really soak up all the flavours as well as producing a tender and juicy chicken.</p>
+    <hr />
+    <br />
+    <!--Second Poultry: Chicken Poppers-->
+    <img src="chicken_poppers.jpg" width="450" height="350" alt="Chicken Poppers" style="float: right;" />
+    <h3>Chicken Poppers</h3>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Diet: Low Fat, Low Carb
+        <br />
+        Cooking and Prep: 30 min
+        <br />
+        Serves: 6
+        <br />
+        Allergy: Contains GLUTEN, WHEAT
+        <br />
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Main Ingredients</h3>
+    <div class="ingredients">
+        <ul>
+            <li>2 chicken breasts, cut into strips (I cut when partly frozen - much easier)</li>
+            <li>1/2 cup Gefen Breadcrumbs (or homemade-I blitz up leftover challah and store in freezer)</li>
+            <li>2-3 tablespoons Manischewitz Honey</li>
+            <li>1 teaspoon shawarma spice blend</li>
+            <li>1 teaspoon paprika</li>
+            <li>1/2 teaspoon sumac</li>
+            <li>salt, to taste</li>
+            <li>pepper, to taste</li>
+            <li>chili powder, to taste</li>
+            <li>Glicks Olive Oil or avocado oil spray</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Chicken Poppers</h4>
+    <ol class="ingredients">
+        <li>Preheat oven to 200 degrees Celsius (400 degrees Fahrenheit) and line baking tray with Gefen Easy Baking Paper.</li>
+        <li>In a ziptop bag, add chicken, bread crumbs, honey, schwarma spice, paprika, sumac, salt, and pepper. Shake the bag all around, making sure all the pieces are coated.</li>
+        <li>
+            Place on baking sheet, separate pieces out to ensure crispiness on all sides. Sprinkle a dash of chili powder on top (optional).
+        </li>
+        <li>Spritz the tops once or twice with oil spray (this also ensures crispiness).</li>
+        <li>Place in oven and bake for 15-20 minutes, flipping halfway through so the under side can get good crunch too.</li>
+    </ol>
+    <hr />
+    <br />
+    <!--Third Poultry: Hoisin Chicken with Broccoli Rice-->
+    <img src="hoisin_chicken.jpg" width="450" height="350" alt="Hoisin Chicken with Broccoli Rice" style="float: right;" />
+    <h3>Hoisin Chicken with Broccoli Rice</h3>
+    <h4 class="comment">Besides for the speed and convenience, one of the reasons I keep Heaven & Earth Brown Rice in my freezer is because sometimes I only need a little bit, especially if I’m preparing a different dinner for my husband than I am for my kids. And it’s very hard to cook a little bit (not to mention  getting an extra pot dirty). It’s perfect for those times when I’m preparing a dish for only one or two members of the family.</h4>
+    <h4 class="comment">This one-pot meal takes minimal time and makes minimal mess. Hoisin sauce is so flavorful on its own...you won’t need to take out half the pantry to make a sauce.</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Diet: Gluten Free
+        <br />
+        Cooking and Prep: 20 min
+        <br />
+        Serves: 2
+        <br />
+        Allergy: Contains SESAME, SOY
+        <br />
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Main Ingredients</h3>
+    <div class="ingredients">
+        <ul>
+            <li>2 tablespoons Gefen Sesame Oil</li>
+            <li>1 onion, diced</li>
+            <li>2 cups frozen chopped broccoli</li>
+            <li>salt, to taste</li>
+            <li>1 packet Heaven & Earth 3 Minute Jasmine Rice</li>
+            <li>1 pound dark chicken cutlets</li>
+            <li>1/3 cup hoisin sauce</li>
+            <li>2 tablespoons water</li>
+            <li>sesame seeds, for sprinkling</li>
+            <li>chopped scallions</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Hoisin Chicken with Broccoli Rice</h4>
+    <ol class="ingredients">
+        <li>Heat oil in a sauté pan. Add onion and sauté for five minutes. Add broccoli and sauté over high heat for two additional minutes, or until broccoli is hot.</li>
+        <li>Microwave rice for three or four minutes (depending on the strength of your microwave) according to package instructions. Add onion-broccoli mixture to rice and season with salt to taste.</li>
+        <li>
+            Season chicken with salt and pepper. Heat oil in the same pan. Add chicken and cook, about four to five minutes per side. Add hoisin sauce and water to pan and stir to coat chicken.
+        </li>
+        <li>Add broccoli rice to the bowls. Slice chicken and add on top. Top with sesame seeds and scallions.</li>
+    </ol>
+    <hr />
+    <div class="chicken">
+    <p>Cleaning a Chicken</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bh6NUd8RzVo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>

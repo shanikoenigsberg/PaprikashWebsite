@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Salads</title>
+    <style>
+        body {
+            font-family: 'Century Gothic', sans-serif;
+        }
+
+        .header {
+            display: inline-grid;
+            grid-template-areas: 'cup survey title';
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .survey_box {
+            grid-area: survey;
+            column-width: auto;
+            justify-self: left;
+            align-self: center;
+            color: grey;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+            .survey_box:hover {
+                text-decoration: underline;
+            }
+
+        .title_box {
+            grid-area: title;
+            column-width: 890px;
+            justify-self: right;
+            align-self: center;
+        }
+
+        .cup_box {
+            grid-area: cup;
+            align-self: center;
+            justify-self: left;
+            border: 0px;
+            padding: 0px;
+            column-width: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4d4341;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-areas: 'box5 box1 box2 box3 box4';
+            background-color: lightgrey;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .home {
+            grid-area: box5;
+        }
+
+        .salads {
+            grid-area: box1;
+        }
+
+        .soups {
+            grid-area: box2;
+        }
+
+        .mains {
+            grid-area: box3;
+        }
+
+        .desserts {
+            grid-area: box4;
+        }
+
+        .nav > a:hover {
+            color: #ab2c0c;
+            font-weight: bold;
+        }
+        .title {
+            color: #2c5237;
+            font-size: 50px;
+            text-align: center;
+            font-family: 'Century Gothic', sans-serif;
+            padding: 10px;
+            margin: 0px;
+        }
+        table:first-of-type {
+            padding: 10px;
+            border-top: 5px solid #2c5237;
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            border-bottom: 2px solid #2c5237;
+        }
+        td:first-of-type {
+            border-left: 2px solid #2c5237;
+        }
+        td {
+            border-right: 2px solid #2c5237;
+        }
+        td > a:hover {
+                font-weight: bold;
+                color: #8e9e62;
+        }
+        @font-face {
+            font-family: 'Thin';
+            src: url(raleway-thin.woff);
+        }
+        .instructions{
+            display: grid;
+            justify-content: center;
+            grid-column-gap: 100px;
+        }
+
+        .text{
+            border: none;
+            font-size: 20px;
+            
+        }
+        .eat_container{
+            display: grid;
+            justify-content: center;
+        }
+       .eat{
+           grid-column: 1;
+           grid-row: 1;
+       }
+       .img1{
+           grid-column: 1;
+           grid-row: 1/3;
+           justify-self: center;
+           align-self: center;
+       }
+       h6{
+            font-size: 50px;
+            font-weight: bold;
+            border: none;
+            color: #ab2c0c;
+            height: 10px;
+            align-self: end;
+       }
+       .step_text{
+           align-self: start;
+           font-size: 30px;
+       }
+       .step1{
+           grid-column: 2;
+           grid-row: 1;
+       }
+       .text1{
+           grid-column: 2;
+           grid-row: 2;
+       }
+       .img2{
+           grid-column: 1;
+           grid-row: 3/ 5;
+           align-self: center;
+       }
+       .step2{
+           grid-column: 2;
+           grid-row: 3;
+       }
+       .text2{
+           grid-column: 2;
+           grid-row: 4;
+       }
+       .img3{
+           grid-column: 1;
+           grid-row: 5/7;
+           align-self: center
+       }
+       .step3{
+           grid-column: 2;
+           grid-row: 5;
+       }
+       .text3{
+           grid-column: 2;
+           grid-row: 6;
+       }
+       .img4{
+           grid-column: 1;
+           grid-row: 7/9;
+           align-self: center;
+       }
+       .step4{
+           grid-column: 2;
+           grid-row: 7;
+       }
+       .text4{
+           grid-column: 2;
+           grid-row: 8;
+       }
+       .img5{
+           grid-column: 1;
+           grid-row: 9/11;
+           align-self: center;
+       }
+       .step5{
+           grid-column: 2;
+           grid-row: 9;
+       }
+       .text5{
+           grid-column: 2;
+           grid-row: 10;
+       }
+       .img6{
+           grid-column: 1;
+           grid-row: 11/13;
+           align-self: center;
+       }
+       .step6{
+           grid-column: 2;
+           grid-row: 11; 
+       }
+       .text6{
+           grid-column: 2;
+           grid-row: 12;
+       }
+       .pics{
+           display: grid;
+       }
+       .pic1{
+           grid-column: 1;
+           grid-row: 1;
+       }
+       .pic2{
+           grid-column: 2;
+           grid-row: 1;
+       }
+       .pic3{
+           grid-column: 3;
+           grid-row: 1;
+       }
+       .pic4{
+           grid-column: 4;
+           grid-row: 1;
+       }
+       .pic5{
+           grid-column: 5;
+           grid-row: 1;
+       }
+       .pic6{
+           grid-column: 6;
+           grid-row: 1;
+       }
+    </style>
+</head>
+<body>
+    <!--Top- header-->
+    <div class="header">
+        <div class="cup_box"><a href="../Cover/Survey/survey.html"><img src="../Cover/utensil_icon.jpg" alt="Icon" width="50" height="40" style="display: inline;" /></a></div>
+        <div class="survey_box"><a href="../Cover/Survey/survey.html">Take our survey!</a></div>
+        <div class="title_box"><h1 style="margin:25px; padding:25px; color:#ab2c0c; text-align:center; font-size:50px;">paprikash</h1></div>
+    </div>
+    <!--nav bar-->
+    <nav class="nav">
+        <a href="../Cover/cover_page.html" class="home">HOME</a>
+        <a href="../Salads/salads.html" class="salads">SALADS</a>
+        <a href="../Soups/soups.html" class="soups">SOUPS</a>
+        <a href="../Mains/main_courses.html" class="mains">MAIN DISHES</a>
+        <a href="../Desserts/desserts.html" class="desserts">DESSERTS</a>
+    </nav>
+    <br />
+    <h1 class="title">SALADS</h1>
+    <table>
+        <tr style="font-family: 'Century Gothic'; font-size: 30px;">
+            <td><a href="vegetable_salads.html">Vegetable Salads</a></td>
+            <td><a href="fruit_salads.html">Fruit Salads</a></td>
+            <td><a href="pasta_salads.html">Pasta Salads</a></td>
+        </tr>
+        <tr style="align-content: center;">
+            <td><a href="vegetable_salads.html"><img src="veggie_cover.jpg" alt="Veggie Salads" height="600" width="400" /></a></td>
+            <td><a href="fruit_salads.html"><img src="fruit_cover.jpg" alt="Fruit Salads" height="600" width="375" /></a></td>
+            <td><a href="pasta_salads.html"><img src="pasta_cover.jpg" alt="Pasta Salads" height="600" width="400" /></a></td>
+        </tr>
+    </table>
+    <h3 style="border-bottom: 2px solid #ab2c0c; text-align: center; font-size: 40px; color: #ab2c0c;">Why you NEED your fruits and veggies</h3>
+    <div class="eat_container"><img src="eat_well.jpg" alt="How to buy fruits and veggies" style="border: none; text-align: center;" class="eat" /></div>
+    <br />
+    <h3 style="border-bottom: 2px solid #38336b; text-align: center; font-size: 40px; color: #38336b; font-weight: bold;">How to make the BEST Salad ON THE GO</h3>
+    <div class="instructions">
+        <img src="container.jpg" width="350" height="400" alt="Container" class="img1" />
+        <h6 class="step1">Step One.</h6>
+        <p class="step_text text1">
+            Buy yourself a good container. Its a good idea to get one that is airtight so it will not spill in your bag.
+            Its advisable to get a container that has a spot for your salad dressing.
+        </p>
+        <img src="cutlery.jpg" width="371" height="325" alt="Cutlery" class="img2" />
+        <h6 class="step2">Step Two.</h6>
+        <p class="step_text text2">
+            Take along disposable cutlery. You don't want extra washing after you come home. After you finish eating
+            you can throw away the germs!
+        </p>
+
+        <img src="leafy_greens.jpg" width="450" height="400" alt="Leafy Greens" class="img3" />
+        <h6 class="step3">Step Three.</h6>
+        <p class="text3 step_text">
+            Building your salad. The first step in building your salad is to put in leafy greens.
+            Examples of leafy green vegetables are: lettuce, spinach, kale, broccoli etc.
+        </p>
+        <img src="salad.jpg" width="450" height="450" alt="Salad" class="img4" />
+        <h6 class="step4">Step Four.</h6>
+        <p class="step_text text4">
+            Put in ingredients to make your salad exciting! To ensure your salad is filling, put in 2-3 fruits or vegetables
+            or pasta. Also, you can add protein (such as: fish, chicken, eggs, cheese...) to make it more filling.
+        </p>
+
+        <img src="ziploc.jpg" width="450" height="450" alt="Ziploc" class="img5" />
+        <h6 class="step5">Step Five.</h6>
+        <p class="text5 step_text">
+            Package it up and put it in your bag. Put it in a ziploc bag to be certain that you will not have any salad juice in your bag.
+        </p>
+
+        <img src="enjoy.jpg" width="400" height="400" alt="Enjoy!" class="img6"/>
+        <h6 class="step6">Step Six.</h6>
+        <p class="text6 step_text">
+            When its lunchtime, dig in! Enjoy! <b><u>Tip:</u></b> You can make it at night and store it in the fridge until the morning if its too hard to make it before you leave.
+        </p>
+    </div> 
+    <h5 style="font-size: 20px; text-align: center; font-weight: bold;">Want your salad to look beautiful?<a href="https://theviewfromgreatisland.com/7-tips-for-show-stopping-salads/"><u>Click here to learn 7 tips for showstopping SALADS</u></a></h5>
+    <div class="pics">
+        <img src="salads1.jpg" width="175" height="300" alt="Salad" class="pic1" />
+        <img src="salad2.jpg" width="202" height="300" alt="Salad" class="pic2" />
+        <img src="salad3.jpg" width="225" height="300" alt="Salad" class="pic3" />
+        <img src="salad4.jpg" width="210" height="300" alt="Salad" class="pic4" />
+        <img src="salad5.jpg" width="200" height="300" alt="Salad" class="pic5" />
+        <img src="salad6.jpg" width="200" height="300" alt="Salad" class="pic6"/>
+    </div>
+</body>
+</html>

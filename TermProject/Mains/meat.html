@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Meat</title>
+    <style>
+        body {
+            font-family: 'Century Gothic';
+        }
+
+        .header {
+            display: inline-grid;
+            grid-template-areas: 'cup survey title';
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .survey_box {
+            grid-area: survey;
+            column-width: auto;
+            justify-self: left;
+            align-self: center;
+            color: grey;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+            .survey_box:hover {
+                text-decoration: underline;
+            }
+
+        .title_box {
+            grid-area: title;
+            column-width: 890px;
+            justify-self: right;
+            align-self: center;
+        }
+
+        .cup_box {
+            grid-area: cup;
+            align-self: center;
+            justify-self: left;
+            border: 0px;
+            padding: 0px;
+            column-width: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4d4341;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-areas: 'box5 box1 box2 box3 box4';
+            background-color: lightgrey;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .home {
+            grid-area: box5;
+        }
+
+        .salads {
+            grid-area: box1;
+        }
+
+        .soups {
+            grid-area: box2;
+        }
+
+        .mains {
+            grid-area: box3;
+        }
+
+        .desserts {
+            grid-area: box4;
+        }
+
+        .nav > a:hover {
+            color: #ab2c0c;
+            font-weight: bold;
+        }
+
+        .title {
+            color: #2c5237;
+            font-size: 50px;
+            text-align: center;
+            font-family: Thin, 'Century Gothic', sans-serif;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        h3 {
+            font-size: 40px;
+            color: #4e5e47;
+            display: inline;
+            border: 2px solid #4e5e47;
+            padding: 5px;
+        }
+
+        .comment {
+            font-size: 20px;
+            color: #695a3e;
+        }
+
+        @font-face {
+            font-family: 'Thin';
+            src: url(raleway-thin.woff);
+        }
+
+        ul {
+            list-style: none; /*Remove default bullets*/
+        }
+
+            ul li:before {
+                content: "\2023";
+                color: #695a3e;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+        .subs {
+            font-size: 35px;
+            color: #768a6d;
+            font-weight: bold;
+        }
+
+        .sub_of_sub {
+            font-size: 25px;
+            color: #5a7d2d;
+            font-weight: bold;
+            border: none;
+        }
+
+        .ingredients {
+            color: #695a3e;
+            font-size: 25px;
+        }
+
+        ol li {
+            padding: 10px;
+        }
+
+        .a:hover {
+            color: #8f9e5c;
+        }
+    </style>
+</head>
+<body>
+    <!--Top- header-->
+    <div class="header">
+        <div class="cup_box"><a href="../Cover/Survey/survey.html"><img src="../Cover/utensil_icon.jpg" alt="Icon" width="50" height="40" style="display: inline;" /></a></div>
+        <div class="survey_box"><a href="../Cover/Survey/survey.html">Take our survey!</a></div>
+        <div class="title_box"><h1 style="margin:25px; padding:25px; color:#ab2c0c; text-align:center; font-size:50px;">paprikash</h1></div>
+    </div>
+    <!--nav bar-->
+    <nav class="nav">
+        <a href="../Cover/cover_page.html" class="home">HOME</a>
+        <a href="../Salads/salads.html" class="salads">SALADS</a>
+        <a href="../Soups/soups.html" class="soups">SOUPS</a>
+        <a href="../Mains/main_courses.html" class="mains">MAIN DISHES</a>
+        <a href="../Desserts/desserts.html" class="desserts">DESSERTS</a>
+    </nav>
+    <br />
+    <h1 class="title" style="border-bottom: 2px solid #2c5237; border-top: 2px solid #2c5237;">Meat</h1>
+    <br />
+    <!--First Meat: Honey Garlic Beef and Shishito Peppers-->
+    <img src="beef.jpg" width="450" height="350" alt="Honey Garlic Beef and Shishito Peppers" style="float: right;" />
+    <h3>Honey Garlic Beef and Shishito Peppers</h3>
+    <h4 class="comment">Shishito peppers are a delicious, mild pepper. In this recipe, they are cooked in a cast iron pan seasoned with soy, garlic, honey, and sesame oil. Just a warning, 1 in 10 will be hotter than the rest, so be prepared as you bite into each one. </h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Diet: Gluten Free , Low Carb , No Refined Sugar
+        <br />
+        Cooking and Prep: 30 min
+        <br />
+        Serves: 4
+        <br />
+        Allergy: contains SESAME, SOY
+        <br />
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Salad Ingredients</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1 and 1/2 pounds stew meat, cut into really small pieces</li>
+            <li>2 tablespoons soy sauce</li>
+            <li>1 tablespoon minced garlic or 3 cubes Gefen Frozen Garlic</li>
+            <li>1 tablespoon Manischewitz Honey</li>
+            <li>1 teaspoon Gefen Sesame Oil</li>
+            <li>8 ounces shishito peppers</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Honey Garlic Beef and Shishito Peppers</h4>
+    <ol class="ingredients">
+        <li>Place a cast iron pan over medium heat. Put enough oil to cover the bottom of the pan. Add the meat to the pan and spread out in a single layer. Stir every few minutes so it’s cooked on all sides and all the way through. Drain the liquid that accumulates.</li>
+        <li>Mix together the soy sauce, garlic, honey, and sesame oil. Pour into the pan with the meat. Mix well so all the meat is coated. Remove the meat from the pan and set aside.</li>
+        <li>
+            Place the peppers in the pan and cook until seared on all sides. Return the meat back to the pan and mix it all together.
+        </li>
+    </ol>
+    <p><b>Note:</b> While these peppers are cooked whole, the stem is not meant to be eaten, so be sure to cut or pull them off as you eat them.</p>
+    <hr />
+    <br />
+    <!--Second Meat: Full ’n Free Meatballs-->
+    <img src="meatballs.jpg" width="450" height="350" alt="Honey Garlic Beef and Shishito Peppers" style="float: right;" />
+    <h3>Full ’n Free Meatballs</h3>
+    <h4 class="comment">This meatball recipe is perfect for Tishrei. First, it’s sweet. And second, it containes one of the simanim — dates! The dates give the sauce enough sweetness that you don’t need any refined sugar, but you still get that classic sweet-and-sour flavor. If you’re trying to limit your meat intake. you can use ground chicken instead. Use half dark chicken and half light chicken for a balanced texture.</h4>
+    <p class="comment">
+        Difficulty: Medium
+        <br />
+        Diet: Gluten Free , No Refined Sugar
+        <br />
+        Cooking and Prep: 2.5 hrs
+        <br />
+        Serves: 6
+        <br />
+        Allergy: contains EGG
+        <br />
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Meatballs</h3>
+    <div class="ingredients">
+        <ul>
+            <li>2 pounds (1 kilogram) lean ground beef</li>
+            <li>1 egg</li>
+            <li>1/4 cup grain-free flour blend or cream of rice</li>
+            <li>1 tablespoon Gefen Onion Powder</li>
+            <li>1 tablespoon Gefen Garlic Powder</li>
+            <li>3/4 teaspoon salt</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Sauce</h3>
+    <div class="ingredients">
+        <ul>
+            <li>2 tablespoons avocado or light olive oil, for sautéing</li>
+            <li>3 large onions, diced</li>
+            <li>6 cloves garlic, crushed or 6 cubes Gefen Frozen Garlic</li>
+            <li>16 Medjool dates, pitted</li>
+            <li>hot water, to cover</li>
+            <li>4 (17.6-oz./500-g.) boxes tomato sauce (I use Tuscanini)</li>
+            <li>1 teaspoon salt</li>
+            <li>1 teaspoon Gefen Oregano</li>
+            <li>1 (8-oz./225-g.) bag shredded cabbage (optional)</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Meatballs</h4>
+    <ol class="ingredients">
+        <li>Mix all meatball ingredients together, being careful not to overmix. Set aside.</li>
+        <li>In a large pot over medium heat, heat oil and sauté onions and garlic until transparent.</li>
+        <li>
+            Place pitted dates in a two-cup measuring cup. Pour boiling water to cover the dates, and let sit for 10 minutes.
+        </li>
+        <li>Put the dates and one cup of the date-soaking water into the bowl of a food processor, reserving the remaining water. Blend until it becomes a paste or thick liquid. Add the date paste and extra water from soaking the dates to the sautéed onions. Add tomato sauce and spices. If the sauce is too thick, add a bit of water.</li>
+        <li>When the sauce is hot, form gumball-sized meatballs and drop them into the sauce. Stir the sauce after every few meatballs. Add shredded cabbage, if using. Lower heat and simmer, covered, for two hours.</li>
+    </ol>
+    <hr />
+    <br />
+    <!--Third Meat: Stuffed Brisket-->
+    <img src="brisket.jpg" width="450" height="350" alt="Honey Garlic Beef and Shishito Peppers" style="float: right;" />
+    <h3>Stuffed Brisket</h3>
+    <h4 class="comment">Add rich flavor to brisket with this savory filling.</h4>
+    <p class="comment">
+        Difficulty: Medium
+        <br />
+        Diet: Low Carb
+        <br />
+        Cooking and Prep: 1 hr 50 min
+        <br />
+        Serves: 8
+        <br />
+        Allergy: contains SOY, WHEAT, GLUTEN
+        <br />
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Filling</h3>
+    <div class="ingredients">
+        <ul>
+            <li>2 tablespoons olive oil</li>
+            <li>2 shallots, finely diced</li>
+            <li>3 cloves garlic, chopped, plus 2 cloves garlic, crushed</li>
+            <li>1/4 cup Peppermill Porcini Powder </li>
+            <li>1/2 cup Alfasi  Cabernet Sauvignon or other dry red wine</li>
+            <li>1 tablespoon Soy Sauce</li>
+            <li>1/2 cup plain panko crumbs, such as Gefen Panko Crumbs</li>
+            <li>1/4 cup chopped parsley</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Brisket</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1 4 pound second cut brisket</li>
+            <li>kosher salt</li>
+            <li>freshly ground black pepper</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Pan Sauce</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1/2 cup chicken stock, such as Manischewitz Chicken Broth</li>
+            <li>1/4 cup Jeunesse Cabernet Sauvignon or other red wine</li>
+            <li>kosher salt, to taste</li>
+            <li>freshly ground black pepper, to taste</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Meatballs</h4>
+    <ol class="ingredients">
+        <li>Mix all meatball ingredients together, being careful not to overmix. Set aside.</li>
+        <li>In a large pot over medium heat, heat oil and sauté onions and garlic until transparent.</li>
+        <li>
+            Place pitted dates in a two-cup measuring cup. Pour boiling water to cover the dates, and let sit for 10 minutes.
+        </li>
+        <li>Put the dates and one cup of the date-soaking water into the bowl of a food processor, reserving the remaining water. Blend until it becomes a paste or thick liquid. Add the date paste and extra water from soaking the dates to the sautéed onions. Add tomato sauce and spices. If the sauce is too thick, add a bit of water.</li>
+        <li>When the sauce is hot, form gumball-sized meatballs and drop them into the sauce. Stir the sauce after every few meatballs. Add shredded cabbage, if using. Lower heat and simmer, covered, for two hours.</li>
+    </ol>
+    <hr />
+    <br />
+    <div style="font-size: 30px; text-align: center; color: darkred;"><a class="a" href="https://www.allrecipes.com/recipes/200/meat-and-poultry/beef/" >Click here for more beef recipes!</a></div>
+</body>
+</html>

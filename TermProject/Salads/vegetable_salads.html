@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Vegetable Salads</title>
+    <style>
+        body {
+            font-family: 'Century Gothic';
+        }
+
+        .header {
+            display: inline-grid;
+            grid-template-areas: 'cup survey title';
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .survey_box {
+            grid-area: survey;
+            column-width: auto;
+            justify-self: left;
+            align-self: center;
+            color: grey;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+            .survey_box:hover {
+                text-decoration: underline;
+            }
+
+        .title_box {
+            grid-area: title;
+            column-width: 890px;
+            justify-self: right;
+            align-self: center;
+        }
+
+        .cup_box {
+            grid-area: cup;
+            align-self: center;
+            justify-self: left;
+            border: 0px;
+            padding: 0px;
+            column-width: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4d4341;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-areas: 'box5 box1 box2 box3 box4';
+            background-color: lightgrey;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            font-family: Century Gothic, Sans-Serif;
+        }
+        .home {
+            grid-area: box5;
+        }
+
+        .salads {
+            grid-area: box1;
+        }
+
+        .soups {
+            grid-area: box2;
+        }
+
+        .mains {
+            grid-area: box3;
+        }
+
+        .desserts {
+            grid-area: box4;
+        }
+
+        .nav > a:hover {
+            color: #ab2c0c;
+            font-weight: bold;
+        }
+
+        .title {
+            color: #2c5237;
+            font-size: 50px;
+            text-align: center;
+            font-family: Thin, 'Century Gothic', sans-serif;
+            padding: 10px;
+            margin: 0px;
+        }
+        h3 {
+            font-size: 40px;
+            color: #4e5e47;
+            display: inline;
+            border: 2px solid #4e5e47;
+            padding: 5px;
+        }
+        .comment {
+            font-size: 20px;
+            color: #695a3e;
+        }
+        @font-face {
+            font-family: 'Thin';
+            src: url(raleway-thin.woff);
+        }
+        ul{
+            list-style: none; /*Remove default bullets*/
+        }
+            ul li:before {
+                content: "\2023";
+                color: #695a3e;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+        .subs {
+            font-size: 35px;
+            color: #768a6d;
+            font-weight: bold;
+        }
+        .ingredients {
+            color: #695a3e;
+            font-size: 25px;
+        }
+        ol li{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--Top- header-->
+    <div class="header">
+        <div class="cup_box"><a href="../Cover/Survey/survey.html"><img src="../Cover/utensil_icon.jpg" alt="Icon" width="50" height="40" style="display: inline;" /></a></div>
+        <div class="survey_box"><a href="../Cover/Survey/survey.html">Take our survey!</a></div>
+        <div class="title_box"><h1 style="margin:25px; padding:25px; color:#ab2c0c; text-align:center; font-size:50px;">paprikash</h1></div>
+    </div>
+    <!--nav bar-->
+    <nav class="nav">
+        <a href="../Cover/cover_page.html" class="home">HOME</a>
+        <a href="../Salads/salads.html" class="salads">SALADS</a>
+        <a href="../Soups/soups.html" class="soups">SOUPS</a>
+        <a href="../Mains/main_courses.html" class="mains">MAIN DISHES</a>
+        <a href="../Desserts/desserts.html" class="desserts">DESSERTS</a>
+    </nav>
+    <br />
+
+    <h1 class="title" style="border-bottom: 2px solid #2c5237; border-top: 2px solid #2c5237;">Vegetable Salads</h1>
+    <br />
+    <!--First Salad: Garlic Dill Salad-->
+    <img src="garlic_dill_salad.jpg" width="600" height="400" alt="Garlic Dill Salad" style="float: right;" />
+    <h3>Garlic Dill Lettuce Salad</h3>
+    <h4 class="comment">Garlic and dill … mmmm … on any chef’s “favorites” list.</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Diet: Vegetarian
+        <br />
+        Cooking and Prep: 10 min
+        <br />
+        Serves: 6
+        <br />
+        Allergy: contains NUTS
+        <br />
+        Author: Kosher.com
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <div class="ingredients">
+        <ul>
+            <li>3/4 cup slivered almonds</li>
+            <li>4 cloves garlic, sliced</li>
+            <li>1 tablespoon oil</li>
+            <li>1 package iceberg or romaine lettuce</li>
+            <li>almonds, for garnish</li>
+            <li>garlic slices, for garnish</li>
+        </ul>
+    </div>
+    <img src="dressing.jpg" width="375" height="500" alt="Dressing" style="float: right;" />
+    <h4 class="subs">Dressing</h4>
+    <div class="ingredients">
+        <ul>
+            <li>2 and 1/2 tablespoons lemon juice</li>
+            <li>1 and 1/2 tablespoons vinegar</li>
+            <li>1 teaspoon salt</li>
+            <li>1/4 cup sugar</li>
+            <li>1/2 cup oil</li>
+            <li>3 to 4 sprigs dill</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Salad</h4>
+    <ol class="ingredients">
+        <li>Sauté 3/4 cup slivered almonds with four cloves garlic in one tablespoon oil. Set aside. Place lettuce in a salad bowl.</li>
+        <li>For dressing, in a separate bowl, blend lemon juice, vinegar, salt, sugar, oil, and dill.</li>
+        <li>Pour dressing over lettuce and garnish with almond and garlic slices.</li>
+    </ol>
+    <hr />
+    <br />
+    <!--Second Salad: Sweet Potato and Corn Salad-->
+    <img src="corn_salad.jpg" width="375" height="525" alt="Sweet Potato and Corn Salad" style="float: right; padding: 10px;" />
+    <h3>Sweet Potato and Corn Salad</h3>
+    <h4 class="comment">This healthy Sweet Potato and Corn Salad has roasted sweet potatoes and corn, bell peppers and pumpkins seeds tossed in a Mexican crema sauce with lime.</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Cooking Time: 20 min
+        <br />
+        Prep Time: 15 min
+        <br />
+        Total Time: 35 min
+        <br />
+        Serves: 6
+        <br />
+        Author: Kevin Is Cooking
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <div class="ingredients">
+        <ul>
+            <li>2 lbs sweet potatoes</li>
+            <li>2 tbsp oil</li>
+            <li>1 tsp ground cumin</li>
+            <li>1 tsp salt</li>
+            <li>1 tsp black pepper</li>
+            <li>4 ears of fresh corn outer leaves removed</li>
+            <li>2 bell peppers green and red colored, chopped (<a href="#video"><b><u>CLICK HERE </u></b></a>TO LEARN HOW TO CHOP VEGETABLES SMALL (AT THE BOTTOM OF THIS PAGE) </li>
+            <li>1 cup red onion diced (about 1/2 large onion)</li>
+            <li>1/2 cup roasted pumpkin seeds</li>
+            <li>1/2 cup cilantro leaves chopped</li>
+            <li>8 oz sour cream</li>
+            <li>2 limes juiced</li>
+        </ul>
+    </div>
+    <img src="sweet_potato.jpg" width="350" height="315" alt="Sweet Potato and Corn" style="float: right; padding: 10px;" />
+    <h4 class="subs">Prepare the Salad</h4>
+    <ol class="ingredients">
+        <li>Preheat oven to 400°F.</li>
+        <li>In a bowl toss the cubed sweet potatoes with the oil, cumin, salt and pepper. Place on a baking sheet and roast for 20 minutes or until slightly caramelized on edges. Remove from oven and set aside to cool.</li>
+        <li>Using a grill pan or BBQ, grill the corn until slightly blistered all over (about 12 minutes total). When cool enough to handle, use a sharp knife and cut kernels off cob. Set aside.</li>
+        <li>Dice red onion and cover with cold water, set aside for 10 minutes. This will help take the bite out of them.</li>
+        <li>Chop bell peppers into small dice, set aide. Juice limes.</li>
+        <li>In a small bowl whisk together the lime juice and sour cream.</li>
+        <li>In a large salad bowl toss together the sweet potatoes, corn, peppers, onion, pumpkin seeds, cilantro and the sour cream and lime dressing. Season to taste. Refrigerate for an hour covered. Serve with more crema and pumpkin seeds sprinkled on top with lime zest (optional).</li>
+    </ol>
+    <hr />
+    <br />
+    <!--Third Salad- Avocado Salad-->
+    <img src="avocado_salad.jpg" width="460" height="350" alt="Avocado Salad" style="float: right;" />
+    <h3>Creamy Avocado Salad + Dip</h3>
+    <h4 class="comment">I was shocked at how this dressing stayed bright green in the fridge for over a week! Matzah, salt, and avocado is always a great shidduch, and the salad is not too shabby either!</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Diet: Vegetarian, Gluten Free, Low Carb, Paleo
+        <br />
+        Cooking and Prep: 40 min
+        <br />
+        Serves: 6
+        <br />
+        Allergy: contains NUTS
+        <br />
+        Author: Family Table
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <div class="ingredients">
+        <ul>
+            <li>1 small golden beet, divided</li>
+            <li>1 beet, cut into small matchsticks, divided</li>
+            <li>1 sweet potato, finely cubed</li>
+            <li>1 red onion, finely chopped</li>
+            <li>Gefen Olive Oil, for drizzling</li>
+            <li>salt, for sprinkling</li>
+            <li>spinach leaves, or lettuce of your choice</li>
+            <li>toasted slivered almonds</li>
+        </ul>
+    </div>
+    <img src="avocado.jpg" width="550" height="300" alt="Avocado" style="float: right;" />
+    <h4 class="subs">Avocado Dip + Dressing</h4>
+    <div class="ingredients">
+        <ul>
+            <li>3 avocados, cubed</li>
+            <li>1 shallot, chopped</li>
+            <li>3 tablespoons fresh lime juice, divided</li>
+            <li>1/4 cup Gefen Mayonnaise (or homemade)</li>
+            <li>1 teaspoon salt</li>
+            <li>1/4 teaspoon pepper</li>
+            <li>1/4 cup coarsely chopped fresh basil (optional)</li>
+            <li>1 tablespoon Baron Herzog Chenin Blanc or other dry white wine</li>
+            <li>1 tablespoon Manischewitz Honey or sugar</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Dip</h4>
+    <ol class="ingredients">
+        <li>Blend avocado, shallot, one tablespoon lime juice, mayonnaise, salt, and pepper with the fresh basil if using. Set aside about half to use as a dip.</li>
+        <li>Blend the rest with the remaining two tablespoons lime juice, wine, and honey to use as a salad dressing.</li>
+    </ol>
+    <h4 class="subs">Prepare the Salad</h4>
+    <ol class="ingredients">
+        <li>Preheat oven to 425 degrees Fahrenheit (220 degrees Celsius).</li>
+        <li>Arrange the sweet potato cubes, half the beet sticks, and the chopped onion in a single layer on a baking sheet.</li>
+        <li>Drizzle with olive oil, and sprinkle with salt. Roast for 30 minutes.</li>
+        <li>To serve: Plate spinach leaves and add roasted veggies. Sprinkle the raw beets on top and drizzle with dressing. Top with toasted almonds.</li>
+    </ol>
+    <br />
+    <table style="width:100%;">
+        <tr>
+            <td style="padding: 10px; border: none; border-top: 2px solid #7d382d; border-bottom: 2px solid #7d382d; text-align: center; font-size: 35px; color: #7d382d; ">WATCH THE VIDEO BELOW TO LEARN HOW TO CUT VEGETABLES SMALL</td>
+        </tr>
+        <tr>
+            <td style="border: none; text-align: center;"><div id="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/VLp5yvKu-W4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

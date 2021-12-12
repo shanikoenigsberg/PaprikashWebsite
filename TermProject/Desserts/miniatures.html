@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Miniatures</title>
+    <style>
+        body {
+            font-family: 'Century Gothic';
+        }
+
+        .header {
+            display: inline-grid;
+            grid-template-areas: 'cup survey title';
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .survey_box {
+            grid-area: survey;
+            column-width: auto;
+            justify-self: left;
+            align-self: center;
+            color: grey;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+            .survey_box:hover {
+                text-decoration: underline;
+            }
+
+        .title_box {
+            grid-area: title;
+            column-width: 890px;
+            justify-self: right;
+            align-self: center;
+        }
+
+        .cup_box {
+            grid-area: cup;
+            align-self: center;
+            justify-self: left;
+            border: 0px;
+            padding: 0px;
+            column-width: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4d4341;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-areas: 'box5 box1 box2 box3 box4';
+            background-color: lightgrey;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .home {
+            grid-area: box5;
+        }
+
+        .salads {
+            grid-area: box1;
+        }
+
+        .soups {
+            grid-area: box2;
+        }
+
+        .mains {
+            grid-area: box3;
+        }
+
+        .desserts {
+            grid-area: box4;
+        }
+
+        .nav > a:hover {
+            color: #ab2c0c;
+            font-weight: bold;
+        }
+
+        .title {
+            color: #2c5237;
+            font-size: 50px;
+            text-align: center;
+            font-family: Thin, 'Century Gothic', sans-serif;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        h3 {
+            font-size: 40px;
+            color: #4e5e47;
+            display: inline;
+            border: 2px solid #4e5e47;
+            padding: 5px;
+        }
+
+        .comment {
+            font-size: 20px;
+            color: #695a3e;
+        }
+
+        @font-face {
+            font-family: 'Thin';
+            src: url(raleway-thin.woff);
+        }
+
+        ul {
+            list-style: none; /*Remove default bullets*/
+        }
+
+            ul li:before {
+                content: "\2023";
+                color: #695a3e;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+        .subs {
+            font-size: 35px;
+            color: #768a6d;
+            font-weight: bold;
+        }
+
+        .sub_of_sub {
+            font-size: 25px;
+            color: #5a7d2d;
+            font-weight: bold;
+            border: none;
+        }
+
+        .ingredients {
+            color: #695a3e;
+            font-size: 25px;
+        }
+
+        ol li {
+            padding: 10px;
+        }
+
+        .a:hover {
+            color: #8f9e5c;
+        }
+        .eat_container {
+            display: grid;
+            justify-content: center;
+        }
+
+        .eat {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    </style>
+</head>
+<body>
+    <!--Top- header-->
+    <div class="header">
+        <div class="cup_box"><a href="../Cover/Survey/survey.html"><img src="../Cover/utensil_icon.jpg" alt="Icon" width="50" height="40" style="display: inline;" /></a></div>
+        <div class="survey_box"><a href="../Cover/Survey/survey.html">Take our survey!</a></div>
+        <div class="title_box"><h1 style="margin:25px; padding:25px; color:#ab2c0c; text-align:center; font-size:50px;">paprikash</h1></div>
+    </div>
+    <!--nav bar-->
+    <nav class="nav">
+        <a href="../Cover/cover_page.html" class="home">HOME</a>
+        <a href="../Salads/salads.html" class="salads">SALADS</a>
+        <a href="../Soups/soups.html" class="soups">SOUPS</a>
+        <a href="../Mains/main_courses.html" class="mains">MAIN DISHES</a>
+        <a href="../Desserts/desserts.html" class="desserts">DESSERTS</a>
+    </nav>
+    <br />
+    <h1 class="title" style="border-bottom: 2px solid #2c5237; border-top: 2px solid #2c5237;">Miniatures</h1>
+    <br />
+    <!--First Miniature: Mini Strawberry Napoleons-->
+    <img src="mini_napoleons.jpg" width="460" height="350" alt="Mini Strawberry Napoleons" style="float: right;" />
+    <h3>Mini Strawberry Napoleons</h3>
+    <h4 class="comment">Bakery Napoleons are good, but this make-at-home version, with puff pastry, vanilla pudding, fresh strawberries and lots of whipped cream, is so much better!</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Cooking and Prep: 1 hr 25 min
+        <br />
+        Serves: 8
+        <br />
+        Allergies: Contains GLUTEN, WHEAT
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Main Ingredients</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1/2 of a 17.3-ounce package Pepperidge Farm® Puff Pastry Sheets (1 sheet), thawed</li>
+            <li>1 package (about 3 ounces) instant vanilla pudding and pie filling mix</li>
+            <li>1 cup milk (can use Parve milk also)</li>
+            <li>1 1/2 cup sweetened whipped cream or thawed frozen whipped topping</li>
+            <li>1 1/4 cup sliced strawberries</li>
+            <li> 2 tablespoons confectioners’ sugar</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Napoleons</h4>
+    <ol class="ingredients">
+        <li>
+            Heat the oven to 400°F.
+        </li>
+        <li>Unfold the pastry sheet on a lightly floured surface. Cut the pastry sheet into 3 strips along the fold marks. Cut each strip into 4 rectangles. Place the pastries onto a baking sheet.</li>
+        <li>
+            Bake for 15 minutes or until the pastries are golden brown.  Let the pastries cool on the baking sheet on a wire rack for 10 minutes.  Split each pastry into 2 layers, making 24 in all.
+        </li>
+        <li>
+            Prepare the pudding mix according to the package directions except use 1 cup milk.  Fold in the whipped cream.
+        </li>
+        <li>Reserve 8 top pastry layers. Spread 2 tablespoons pudding mixture on each of 8 bottom pastry layers. Top each with 1 tablespoon strawberries and another pastry layer. Top with the remaining pudding mixture, strawberries and the reserved top pastry layers. Sprinkle with the confectioners’ sugar.</li>
+        <li>Ingredient Note: For 1 1/2 cups sweetened whipped cream, beat 3/4 cup heavy cream, 2 tablespoons sugar and 1/4 teaspoon vanilla extract in a medium bowl with an electric mixer on high speed until stiff peaks form.</li>
+        <li>Serving Suggestion: Drizzle with spoonfuls of chocolate sauce, if desired.</li>
+    </ol>
+    <hr />
+    <br />
+    <!--Second Miniature: Mini Tiramisu Trifles-->
+    <img src="mini_tiramisu.jpg" width="300" height="450" alt="Mini Tiramisu Trifles" style="float: right;" />
+    <h3>Mini Tiramisu Trifles</h3>
+    <h4 class="comment">Mini Tiramisu Trifles with a layer of mascarpone cheese, ladyfingers and espresso! A delicious, easy & fun way to enjoy tiramisu & trifle at the same time!</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Cooking and Prep: 30 min
+        <br />
+        Serves: 5-6 mini trifles
+        <br />
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Mascarpone Filling</h3>
+    <div class="ingredients">
+        <ul>
+            <li>20 oz (565g) mascarpone cheese</li>
+            <li>3 tbsp (39g) sugar</li>
+            <li>1 cup (240ml) heavy whipping cream, cold</li>
+            <li>1/2 cup (58g) powdered sugar</li>
+            <li>1 tsp vanilla extract</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Espresso Mixture</h3>
+    <div class="ingredients">
+        <ul>
+            <li>3/4 cup (180ml) hot water</li>
+            <li>3 tbsp (45ml) instant espresso powder</li>
+            <li>3 tbsp (39g) sugar</li>
+            <li>36 lady fingers</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Whipped Cream</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1/2 cup (120ml) heavy whipping cream</li>
+            <li>1/4 cup (29g) powdered sugar</li>
+            <li>2 tbsp (30ml) kahlua</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Mini Tiramisu Trifles</h4>
+    <ol class="ingredients">
+        <li>
+            Mix mascarpone cheese and sugar together until combined. Do not over mix or the mascarpone cheese can thin out. Set aside.
+        </li>
+        <li>In another bowl, add the heavy whipping cream, powdered sugar and vanilla extract and whip until stiff peaks form.</li>
+        <li>
+            Carefully fold the whipped cream into the mascarpone cheese mixture. Set aside.
+        </li>
+        <li>
+            In another bowl, combine the hot water, espresso powder and sugar.
+        </li>
+        <li>To layer the trifles, dip the ladyfingers into the espresso mixture one at a time and place into the bottom of the trifle cup. Use two to three ladyfingers and break into pieces as needed so they fit in the cup and create a full layer.</li>
+        <li>Pipe or spoon a layer of mascarpone filling on top of the ladyfingers.</li>
+        <li>Repeat another layer of ladyfingers and mascarpone filling.</li>
+        <li>After completing the trifles, make the whipped cream.</li>
+        <li>Add the heavy whipping cream, powdered sugar and kahlua to a large mixer bowl and whip until stiff peaks form.</li>
+        <li>Pipe a swirl of whipped cream on top of each trifle, then sprinkle with cocoa powder, if desired.</li>
+        <li>Refrigerate trifles until ready to serve. Trifles are best for 2-3 days.</li>
+    </ol>
+    <hr />
+    <br />
+    <!--Third Miniature: DLux Mini Dessert Cups Black Forest Cake-->
+    <img src="mini_cherry.jpg" width="500" height="225" alt="DLux Mini Dessert Cups Black Forest Cake" style="float: right;" />
+    <h3>Mini Dessert Cups Black Forest Cake</h3>
+    <h4 class="comment">The Black Forest Cake Mini Dessert Cups are dashing with layers of chocolate cake crumble, whipped cream and cherries. It's a simple and beautiful small version of our favorite classic cake in DLux mini dessert cups.</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Cooking and Prep: 20 min
+        <br />
+        Serves: 18-20 mini cups
+        <br />
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Main Ingredients</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1 lb chocolate cake</li>
+            <li>3/4 cup powdered sugar</li>
+            <li>1 cup heavy cream</li>
+            <li>1 cup cherry pie filling</li>
+            <li>1/4 cup semisweet chocolate shavings</li>
+            <li>1 cup cherries with stems</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Black Forest Cake Mini Dessert Cups</h4>
+    <ol class="ingredients">
+        <li>
+            Crumble chocolate cake and set aside.
+        </li>
+        <li>Whip heavy cream and powdered sugar until it forms firm peaks. </li>
+        <li>
+            Fill about 1/2 inch of the mini cups with chocolate cake crumbles.
+        </li>
+        <li>
+            Pipe whipped cream about 1/2 inch. Then add 1 tsp of cherry pie filling.
+        </li>
+        <li>Repeat layers. You will end up of 2 layers of each ingredient.</li>
+        <li>Top with whipped cream and garnish with cherry and chocolate shavings.</li>
+        <li>Chill for at least 2 hours and serve.</li>
+    </ol>
+    <p style="font-size: 35px; text-align: center;">Watch the video to see how to make the mini cups</p>
+    <div class="eat_container"><iframe  style="text-align: center;" width="560" height="315" src="https://www.youtube.com/embed/Y5b644KJKxo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="eat"></iframe></div>
+    <br />
+</body>
+</html>

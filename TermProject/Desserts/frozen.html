@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Frozen</title>
+    <style>
+        body {
+            font-family: 'Century Gothic';
+        }
+
+        .header {
+            display: inline-grid;
+            grid-template-areas: 'cup survey title';
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .survey_box {
+            grid-area: survey;
+            column-width: auto;
+            justify-self: left;
+            align-self: center;
+            color: grey;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+            .survey_box:hover {
+                text-decoration: underline;
+            }
+
+        .title_box {
+            grid-area: title;
+            column-width: 890px;
+            justify-self: right;
+            align-self: center;
+        }
+
+        .cup_box {
+            grid-area: cup;
+            align-self: center;
+            justify-self: left;
+            border: 0px;
+            padding: 0px;
+            column-width: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4d4341;
+        }
+
+        .nav {
+            display: grid;
+            grid-template-areas: 'box5 box1 box2 box3 box4';
+            background-color: lightgrey;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            font-family: Century Gothic, Sans-Serif;
+        }
+
+        .home {
+            grid-area: box5;
+        }
+
+        .salads {
+            grid-area: box1;
+        }
+
+        .soups {
+            grid-area: box2;
+        }
+
+        .mains {
+            grid-area: box3;
+        }
+
+        .desserts {
+            grid-area: box4;
+        }
+
+        .nav > a:hover {
+            color: #ab2c0c;
+            font-weight: bold;
+        }
+
+        .title {
+            color: #2c5237;
+            font-size: 50px;
+            text-align: center;
+            font-family: Thin, 'Century Gothic', sans-serif;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        h3 {
+            font-size: 40px;
+            color: #4e5e47;
+            display: inline;
+            border: 2px solid #4e5e47;
+            padding: 5px;
+        }
+
+        .comment {
+            font-size: 20px;
+            color: #695a3e;
+        }
+
+        @font-face {
+            font-family: 'Thin';
+            src: url(raleway-thin.woff);
+        }
+
+        ul {
+            list-style: none; /*Remove default bullets*/
+        }
+
+            ul li:before {
+                content: "\2023";
+                color: #695a3e;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+        .subs {
+            font-size: 35px;
+            color: #768a6d;
+            font-weight: bold;
+        }
+
+        .sub_of_sub {
+            font-size: 25px;
+            color: #5a7d2d;
+            font-weight: bold;
+            border: none;
+        }
+
+        .ingredients {
+            color: #695a3e;
+            font-size: 25px;
+        }
+
+        ol li {
+            padding: 10px;
+        }
+
+        .a:hover {
+            color: #8f9e5c;
+        }
+    </style>
+</head>
+<body>
+    <!--Top- header-->
+    <div class="header">
+        <div class="cup_box"><a href="../Cover/Survey/survey.html"><img src="../Cover/utensil_icon.jpg" alt="Icon" width="50" height="40" style="display: inline;" /></a></div>
+        <div class="survey_box"><a href="../Cover/Survey/survey.html">Take our survey!</a></div>
+        <div class="title_box"><h1 style="margin:25px; padding:25px; color:#ab2c0c; text-align:center; font-size:50px;">paprikash</h1></div>
+    </div>
+    <!--nav bar-->
+    <nav class="nav">
+        <a href="../Cover/cover_page.html" class="home">HOME</a>
+        <a href="../Salads/salads.html" class="salads">SALADS</a>
+        <a href="../Soups/soups.html" class="soups">SOUPS</a>
+        <a href="../Mains/main_courses.html" class="mains">MAIN DISHES</a>
+        <a href="../Desserts/desserts.html" class="desserts">DESSERTS</a>
+    </nav>
+    <br />
+    <h1 class="title" style="border-bottom: 2px solid #2c5237; border-top: 2px solid #2c5237;">Frozen</h1>
+    <br />
+    <!--First Frozen: Pumkin Ice Cream-->
+    <img src="pumpkin_ice_cream.jpg" width="450" height="350" alt="Pumpkin Ice Cream" style="float: right; padding: 10px;" />
+    <h3>Pumpkin Ice Cream</h3>
+    <h4 class="comment">All the little pumpkins in your family will be clamoring for this ice cream...as will the adults.</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Cooking and Prep: 20 min
+        <br />
+        Serves: 8
+        <br />
+        Allergies: Containes DAIRY, NUTS
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Main Ingredients</h3>
+
+    <div class="ingredients">
+        <ul>
+            <li>1 quart vanilla ice cream, softened</li>
+            <li>1 cup canned pumpkin puree</li>
+            <li>1/4 teaspoon pumpkin pie spice</li>
+            <li>caramel sauce, to drizzle</li>
+            <li>2 Viennese crunch bars, chopped</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Pumpkin Ice Cream</h4>
+    <ol class="ingredients">
+        <li>
+            In a blender, combine ice cream, pumpkin and pumpkin pie spice until well blended. Return mixture to the ice cream container and refreeze until ready to serve.
+        </li>
+        <li>Scoop ice cream into a bowl or glass and drizzle with caramel sauce. Sprinkle with Viennese crunch.</li>
+    </ol>
+    <hr />
+    <br />
+    <!--Second Frozen: Sorbet with Rice Krispy Crunch-->
+    <img src="sorbet.jpg" width="450" height="350" alt="Sorbet with Rice Krispy Crunch" style="float: right; padding: 10px;" />
+    <h3>Sorbet with Rice Krispy Crunch</h3>
+    <h4 class="comment">I love hosting, especially family, and I’ll patchkeh over new appetizers and side dishes with a bunch of components until my back aches. But something about the thought of making dessert just fills me with dread. This one is as easy as it gets!</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Cooking and Prep: 30 min
+        <br />
+        Serves: 8
+        <br />
+        Allergies: Containes GLUTEN, WHEAT
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Sorbet</h3>
+    <div class="ingredients">
+        <ul>
+            <li>2 containers of your favorite sorbet</li>
+            <li>1/2 cup pomegranate arils</li>
+        </ul>
+    </div>
+    <h3 class="sub_of_sub">Rice Krispy Crunch</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1 cup flour</li>
+            <li>1/3 cup brown sugar</li>
+            <li>1/2 cup (1 stick) margarine</li>
+            <li>1 cup Rice Krispies</li>
+        </ul>
+    </div>
+    <h4 class="subs">To Make the Crunch</h4>
+    <ol class="ingredients">
+        <li>
+            Preheat oven to 350 degrees Fahrenheit (175 degrees Celsius).
+        </li>
+        <li>In a medium bowl, combine flour, brown sugar, and margarine. Pinch together until it has the texture of wet sand.</li>
+        <li>Carefully stir in the Rice Krispies. Spread the mixture out on a lined baking sheet so it’s crumbly and bake for 20 minutes. Cool and store in a bag until ready to use.</li>
+    </ol>
+    <h4 class="subs">To Serve</h4>
+    <ol class="ingredients">
+        <li>
+            Scoop out sorbet. Top with crunch and pomegranate arils. Voila!
+        </li>
+    </ol>
+    <hr />
+    <br />
+    <!--Third Frozen: Secret Ice Cream Surprise-->
+    <img src="ice_cream.jpg" width="450" height="350" alt="Secret Ice Cream Surprise" style="float: right; padding: 10px;" />
+    <h3>Secret Ice Cream Surprise</h3>
+    <h4 class="comment">Wow! Rich and creamy, unlike anything else.</h4>
+    <p class="comment">
+        Difficulty: Easy
+        <br />
+        Cooking and Prep: 30 min
+        <br />
+        Serves: 6
+        <br />
+        Allergies: Containes DAIRY, PEANUTS, GLUTEN, WHEAT
+    </p>
+    <h4 class="subs">Ingredients</h4>
+    <h3 class="sub_of_sub">Main Ingredients</h3>
+    <div class="ingredients">
+        <ul>
+            <li>1/2 gallon vanilla ice cream (dairy or parve)</li>
+            <li>2 bars Swiss chocolate (dairy or parve)</li>
+            <li>1 tablespoon Peanut Butter</li>
+            <li>1 cup Frosted Flakes cereal</li>
+        </ul>
+    </div>
+    <h4 class="subs">Prepare the Ice Cream Surprise</h4>
+    <ol class="ingredients">
+        <li>
+            Remove ice cream from freezer and melt completely.
+        </li>
+        <li>Melt chocolate and peanut butter in a double boiler.</li>
+        <li>Add Frosted Flakes to chocolate mixture and mix.</li>
+        <li>Add melted ice cream and combine.</li>
+        <li>Refreeze!</li>
+    </ol>
+    <hr />
+</body>
+</html>

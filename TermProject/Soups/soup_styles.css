@@ -1,0 +1,146 @@
+﻿body {
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.header {
+    display: inline-grid;
+    grid-template-areas: 'cup survey title';
+    font-family: Century Gothic, Sans-Serif;
+}
+
+.survey_box {
+    grid-area: survey;
+    column-width: auto;
+    justify-self: left;
+    align-self: center;
+    color: grey;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+    .survey_box:hover {
+        text-decoration: underline;
+    }
+
+.title_box {
+    grid-area: title;
+    column-width: 890px;
+    justify-self: right;
+    align-self: center;
+}
+
+.cup_box {
+    grid-area: cup;
+    align-self: center;
+    justify-self: left;
+    border: 0px;
+    padding: 0px;
+    column-width: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #4d4341;
+}
+
+.nav {
+    display: grid;
+    grid-template-areas: 'box5 box1 box2 box3 box4';
+    background-color: lightgrey;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    font-family: Century Gothic, Sans-Serif;
+}
+
+.home {
+    grid-area: box5;
+}
+
+.salads {
+    grid-area: box1;
+}
+
+.soups {
+    grid-area: box2;
+}
+
+.mains {
+    grid-area: box3;
+}
+
+.desserts {
+    grid-area: box4;
+}
+
+.nav > a:hover {
+    color: #ab2c0c;
+    font-weight: bold;
+}
+
+.title {
+    color: #2c5237;
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Century Gothic', sans-serif;
+    padding: 10px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 40px;
+    color: #4e5e47;
+    display: inline;
+    border: 2px solid #4e5e47;
+    padding: 5px;
+}
+
+.comment {
+    font-size: 20px;
+    color: #695a3e;
+}
+
+@font-face {
+    font-family: 'Thin';
+    src: url(raleway-thin.woff);
+}
+
+ul {
+    list-style: none; /*Remove default bullets*/
+}
+
+    ul li:before {
+        content: "\2023";
+        color: #695a3e;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+.subs {
+    font-size: 35px;
+    color: #768a6d;
+    font-weight: bold;
+}
+
+.sub_of_sub {
+    font-size: 25px;
+    color: #5a7d2d;
+    font-weight: bold;
+    border: none;
+}
+
+.ingredients {
+    color: #695a3e;
+    font-size: 25px;
+}
+
+ol li {
+    padding: 10px;
+}
+
+.a:hover {
+    color: #8f9e5c;
+}
+
